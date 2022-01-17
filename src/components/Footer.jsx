@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div className="bg-gray-900 text-white">
       <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 md:px-8">
-        <div className="flex justify-between my-4">
+        <div className="flex justify-between md:my-4">
           <img
             className="h-32 w-48"
             src="https://cloudstok.com/img/white-logo.png"
@@ -39,15 +39,15 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row">
           <p>
-            Leaders from the Cloudst Industry <br />
+            Leaders from the Cloudstpk Industry <br />
             have come together to dissipate <br />
             problems that were faced in the
             <br /> market.
           </p>
           <div>
-            <h2 className="font-bold text-lg mb-2">Our Company</h2>
+            <h2 className="font-bold text-lg mb-2 mt-6 md:mt-0">Our Company</h2>
             <ul>
               {links.map(e => (
                 <li className="mt-2 cursor-pointer">{e}</li>
@@ -55,7 +55,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h2 className="font-bold text-lg mb-2">What we do</h2>
+            <h2 className="font-bold text-lg mb-2 mt-6 md:mt-0">What we do</h2>
             <ul>
               {whatWeDo.map(e => (
                 <li className="mt-2">{e}</li>
@@ -63,11 +63,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="my-8 h-0.5 bg-black w-full" />
-        <div className="flex justify-between">
+        <div className="my-8 h-0.5 bg-black" />
+        <div className="flex justify-between flex-col md:flex-row">
           <div className="pr-16">
             <h2>Follow Us:</h2>
-            <ul className="flex">
+            <ul className="flex mt-4">
               <a className="h-12 w-12 mr-3 cursor-pointer">
                 <img
                   src={
@@ -102,7 +102,7 @@ const Footer = () => {
               </a>
             </ul>
           </div>
-          <div className="text-sm">
+          <div className="text-sm md:mt-0 mt-8">
             <Link className="cursor-pointer">Cookies</Link>
             {terms.map(e => (
               <Link className="cursor-pointer py-4">{` | ${e}`}</Link>
@@ -111,7 +111,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center w-full bg-black p-4">
-            <h2>Copyright&copy; 2021 Cloudstok</h2>
+        <h2>Copyright&copy; 2021 Cloudstok</h2>
       </div>
     </div>
   )

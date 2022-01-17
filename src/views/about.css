@@ -1,0 +1,11 @@
+.about_title::after{
+    content: '';
+    display: block; 
+    width: 4rem;
+    height: 0.25rem;
+    background-color: lightseagreen;
+    position: relative;
+    bottom: 0.75rem;
+    right:-14rem;
+    
+}

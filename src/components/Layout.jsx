@@ -5,7 +5,7 @@ import Header from './header/Header'
 const Layout = ({children}) => {
     return (
         <div>
-        <Header className="w-full"/>      
+        <Header/>      
         {children}
         <Footer/>      
         </div>
