@@ -9,7 +9,7 @@ function Nav() {
     const [active, setActive] = useState('home');
     return (
         <div>
-            <nav className="bg-white-800 shadow">
+            <nav className="bg-white-800 shadow w-full overflow-hidden">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
                     <div className="flex items-center justify-between h-20">
                         <div className="flex-shrink-0">
