@@ -6,7 +6,7 @@ const Hero = () => {
   const divStyle = { height: "calc(100vh - 80px)" }
   return (
     <section className="hero bg-blue-100" style={divStyle}>
-      <div className="max-w-6xl mx-auto mt-16 md:mt-0 py-4 px-4 sm:px-6 md:px-8 justify-center items-center flex md:justify-between md:items-center h-full flex-col md:flex-row">
+      <div className="max-w-6xl mx-auto md:mt-0 py-4 px-4 sm:px-6 md:px-8 justify-center items-center flex md:justify-between md:items-center h-full flex-col md:flex-row">
         <div className="md:w-1/2">
           <h1 className="font-semibold md:text-5xl text-3xl my-4 ">
             IT Consultation

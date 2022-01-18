@@ -15,12 +15,16 @@ const AboutUs = () => {
 
   return (
     <div
-      className="max-w-7xl px-8 md:px-8 mx-auto py-12"
+      className="max-w-6xl px-8 md:px-8 mx-auto py-12"
       //   style={{ height: "100vh" }}
     >
-      <h2 className="text-black-900 font-semibold text-5xl md:mt-28 pb-12 about_title">
-        About Us
-      </h2>
+      <div className="flex items-baseline">
+          <h2 className="text-black-900 font-semibold md:text-5xl  text-3xl md:mt-28 pb-12">
+           About Us
+          </h2>
+          <div className="w-16 h-1 ml-2 bg-blue-500"></div>
+        </div>
+      
       <div className="flex md:flex-row flex-col md:justify-between">
         <img
           className="h-1/2 max-w-full"
@@ -33,7 +37,7 @@ const AboutUs = () => {
           <h4 className="text-blue-400 text-2xl md:my-0 mt-8">
             Accelerate your journey to digitalization
           </h4>
-          <p className="text-md leading-8 mt-8 text-justify">
+          <p className="text-md leading-7 mt-8 text-justify">
             Leader from the Cloud industry have come together to dissipate
             problems that were faced in the market. We specialize in building
             microservice architecture which includes performing different
@@ -42,14 +46,14 @@ const AboutUs = () => {
             action. Our team will ensure that each microservice is carefully
             migrated, deployed and managed for seamless IT infrastructure.
           </p>
-          <p className="text-md leading-8 mt-8 text-justify">
+          <p className="text-md leading-7 mt-8 text-justify">
             Witnessing the problematic areas in Cloud Computing. Cloudstok was
             formed as the brainchild of leading indudstry experts. Along with
             the proven exprtise in all major technologies, our spot-on
             consulting will help you in an easy transition to digital
             infrastructure
           </p>
-          <button className="mt-8 bg-blue-500 text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
+          <button className="mt-10 bg-blue-500 text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
             more about us
           </button>
         </div>

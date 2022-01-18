@@ -67,7 +67,7 @@ function Nav() {
                                 </Link>
                             </div>
                         </div>
-                        <div className="mr-2 flex md:hidden">
+                        <div className="mr-2 flex md:hidden z-20">
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
                                 type="button"
@@ -116,7 +116,7 @@ function Nav() {
 
                 <Transition
                     show={isOpen}
-                    enter="transition ease-out duration-100 transform"
+                    enter="transition ease-out duration-200 transform"
                     enterFrom="opacity-0 scale-95"
                     enterTo="opacity-100 scale-100"
                     leave="transition ease-in duration-75 transform"
@@ -124,7 +124,7 @@ function Nav() {
                     leaveTo="opacity-0 scale-95"
                 >
                     {(ref) => (
-                        <div className="md:hidden absolute shadow rounded bg-white w-full" id="mobile-menu">
+                        <div className="md:hidden absolute shadow rounded bg-white w-full z-20" id="mobile-menu">
                             <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                             <Link
                                     to='/'

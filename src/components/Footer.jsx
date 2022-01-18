@@ -103,9 +103,9 @@ const Footer = () => {
             </ul>
           </div>
           <div className="text-sm md:mt-0 mt-8">
-            <Link className="cursor-pointer">Cookies</Link>
+            <Link className="cursor-pointer leading-6">Cookies</Link>
             {terms.map(e => (
-              <Link className="cursor-pointer py-4">{` | ${e}`}</Link>
+              <Link className="cursor-pointer py-4 leading-6">{` | ${e}`}</Link>
             ))}
           </div>
         </div>
