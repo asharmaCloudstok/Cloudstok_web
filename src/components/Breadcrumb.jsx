@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 
-const Breadcrumb = () => {
+const Breadcrumb = ({route1}) => {
   return (
     <nav class="flex my-6" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1">
@@ -30,7 +30,7 @@ const Breadcrumb = () => {
              to="/contact"
               class="ml-1 text-lg text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
             >
-              Contact
+              {route1 || 'contact'}
             </Link>
           </div>
         </li>
