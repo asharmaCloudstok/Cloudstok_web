@@ -1,25 +1,24 @@
 import React from "react"
 import { GoLocation } from "react-icons"
-import {FaTools} from 'react-icons/fa'
+import { FaTools } from "react-icons/fa"
 
 const ContactSection = () => {
   const url =
     "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/how-to-manage-a-client-relationship-when-your-personalities-are-different-open-graph.jpg"
   return (
-    <div className="relative" style={{ height: "100vh" }}>
+    <div className="relative">
       <img
         class="object-cover w-full"
         src={url}
         alt="Flower and sky"
-        style={{ height: "100vh" }}
       />
 
-      <div class="absolute top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 px-2">
+      <div class="absolute top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 px-4">
         <h2 className="text-5xl font-bold text-white text-center md:py-24 py-8">
           Contact Us
         </h2>
-        <div className="max-w-4xl mx-auto py-4 sm:px-6 lg:px-12 bg-white flex justify-between">
-          <div className="py-8 ml-12">
+        <div className="mx-auto max-w-4xl md:py-4 md:px-12 bg-white flex flex-col md:flex-row justify-between">
+          <div className="py-8 px-6 md:ml-12 flex flex-col">
             <img
               className="h-48 mx-auto"
               src="https://cdn-icons-png.flaticon.com/512/147/147144.png"
@@ -81,7 +80,7 @@ const ContactSection = () => {
               <p className="ml-4">sales@cloudstok.com</p>
             </div>
           </div>
-          <div className="py-8 pl-20">
+          <div className="py-8 md:pl-20 px-6">
             <div className="flex h-12 items-center px-2 border mt-4 rounded border-gray-200 bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -172,8 +171,8 @@ const ContactSection = () => {
               Submit
             </button>
             <div className="mt-4 text-gray-400 text-center text-sm">
-                Company Name not sell, share or trade customer <br/>
-                information. Your privacy is important to us.
+              Company Name not sell, share or trade customer <br />
+              information. Your privacy is important to us.
             </div>
           </div>
         </div>

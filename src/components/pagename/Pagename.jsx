@@ -1,6 +1,6 @@
 import React from "react"
 
-const Pagename = () => {
+const Pagename = ({name}) => {
   return (
     <div className="relative bg-cover"
       style={{
@@ -10,7 +10,7 @@ const Pagename = () => {
     >
     <div className="absolute w-full h-full bg-gradient-to-r from-black to-transparent z-0">
       <div className="md:max-w-6xl w-full mx-auto rounded flex h-full items-center">
-        <h2 className="ml-6 text-white font-semibold text-4xl">Contact Us</h2>
+        <h2 className="ml-6 text-white font-semibold text-5xl">{name}</h2>
       </div>
     </div>
     </div>
