@@ -9,7 +9,7 @@ import Pagename from "../components/pagename/Pagename"
 const contact = () => {
   return (
     <Layout>
-      <Pagename/>
+      <Pagename name={'Contact Us'}/>
     
       <div className="md:max-w-6xl px-6 md:px-8 mx-auto pb-8">
         <Breadcrumb />
