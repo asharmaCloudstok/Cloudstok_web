@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import Breadcrumb from "../components/Breadcrumb"
 import Layout from "../components/Layout"
@@ -10,18 +11,22 @@ const Services = () => {
     {
       head: "Application Development and Modernization",
       para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      route: "/services/applications"
     },
     {
       head: "Application Testing and Consulting",
       para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      route: "/services/apptesting"
     },
     {
       head: "DevOpas as a service",
       para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      route: "/services/devops"
     },
     {
       head: "Cloud Manage Services",
       para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      route: "/services/cloud"
     },
   ]
   return (
@@ -29,12 +34,12 @@ const Services = () => {
       <Layout>
         <Pagename name={"Services"} />
         <div
-          className="pt-0.5 pb-12 w-full bg-blue-100" //   style={{ height: "100vh" }}
+          className="pb-8 md:pb-20 w-full bg-blue-100" //   style={{ height: "100vh" }}
         >
           <div className="max-w-6xl px-8 md:px-8 mx-auto">
             <Breadcrumb route1={"Services"} />
            <div className="grid sm:grid-cols-2 gap-8 md:mt-12">
-               {data.map(el => <ServiceCard heading={el.head} paragraph={el.para}></ServiceCard>)}
+               {data.map(el => <ServiceCard heading={el.head} paragraph={el.para} route={el.route}></ServiceCard>)}
            </div>
           </div>
         </div>

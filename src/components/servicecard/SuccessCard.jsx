@@ -6,7 +6,7 @@ import  appimg from "../../assets/images/Capture.png"
 const SuccessCard = (props) => {
   return (
     <>
-      <div className="flex m-4 flex-col border border-gray-200 shadow-lg bg-white max-w-screen">
+      <div className="flex my-4 md:m-4 flex-col border border-gray-200 shadow-lg bg-white max-w-screen">
         <img src={appimg} alt="wall" className="p-2"/>
         <div className="p-8">
         <h2 className="font-semibold text-2xl leading-8">

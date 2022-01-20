@@ -3,8 +3,8 @@ import React from "react"
 
 const Breadcrumb = ({route1, route2}) => {
   return (
-    <nav class="flex py-6" aria-label="Breadcrumb">
-      <ol class="inline-flex items-center space-x-1">
+    <nav class="flex py-6 " aria-label="Breadcrumb">
+      <ol class="inline-flex items-center space-x-1 flex-wrap">
         <li class="inline-flex items-center">
             <Link to='/'
             class="text-lg text-gray-900 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
@@ -28,7 +28,7 @@ const Breadcrumb = ({route1, route2}) => {
             </svg>
             <Link
              to="/contact"
-              class="ml-1 text-lg text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+              class="ml-1 text-lg text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
               {route1 || 'contact'}
             </Link>
@@ -37,7 +37,7 @@ const Breadcrumb = ({route1, route2}) => {
       {route2 && <li>
           <div class="flex items-center">
             <svg
-              class="w-6 h-6 text-gray-700"
+              class="w-6 h-6 text-gray-700 hidden md:block"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,10 +49,10 @@ const Breadcrumb = ({route1, route2}) => {
               ></path>
             </svg>
             <Link
-             to="/contact"
-              class="ml-1 text-lg text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"
+             to={'/service-details'}
+              class="md:ml-1 text-lg text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
-              {route2 || 'contact'}
+              {route2}
             </Link>
           </div>
         </li>}

@@ -4,9 +4,10 @@ import { Transition } from "@headlessui/react";
 import { FaChevronUp } from 'react-icons/fa';
 
 
-function Nav() {
+function Nav({location}) {
     const [isOpen, setIsOpen] = useState(false);
     const [active, setActive] = useState('home');
+    
     return (
         <div>
             <nav className="bg-white-800 shadow-lg">
@@ -29,34 +30,40 @@ function Nav() {
                                     Home
                                 </Link>
 
-                                <a
-                                    href="#"
+                                <Link
+                                    to="/workinprogress"
+                                    activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                                 >
                                     Who we are
-                                </a>
+                                </Link>
 
                                 <Link
                                     to='/services'
+                                    partiallyActive={true}
                                     activeClassName=" bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className={"hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm flex"}                                >
                                     Services
                                     <FaChevronUp className="ml-1 mt-0.5" />
                                 </Link>
 
-                                <a
-                                    href="#"
+                            
+                                <Link
+                                    to="/workinprogress"
+                                    activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                                 >
                                     Blogs and Case studies
-                                </a>
+                                </Link>
 
-                                <a
-                                    href="#"
+
+                                <Link
+                                    to="/workinprogress"
+                                    activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                                 >
                                     Career
-                                </a>
+                                </Link>
                                 <Link
                                     to='/contact'
                                     activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
@@ -135,7 +142,7 @@ function Nav() {
                                 </Link>
 
                                 <Link
-                                    to='/home'
+                                    to='/workinprogress'
                                     activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                                 >
@@ -144,6 +151,7 @@ function Nav() {
 
                                 <Link
                                     to='/services'
+                                    partiallyActive={true}
                                     activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                                 >
@@ -151,14 +159,14 @@ function Nav() {
                                 </Link>
 
                                 <Link
-                                    to='/blogs-service'
+                                    to='/workinprogress'
                                     activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                                 >
                                     Blogs and Case Studies
                                 </Link>
                                 <Link
-                                    to='/career'
+                                    to='/workinpgrogress'
                                     activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                                     className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                                 >
