@@ -1,9 +1,8 @@
 import React from "react"
 import "./about.css"
-import {FaTools} from 'react-icons/fa'
-import {RiCustomerService2Line} from 'react-icons/ri'
+import { FaTools } from "react-icons/fa"
+import { RiCustomerService2Line } from "react-icons/ri"
 const AboutUs = () => {
-
   const userData = [
     { rank: 102, name: "VMs Launched" },
     { rank: 352, name: "Cloud Skill Sets" },
@@ -14,16 +13,14 @@ const AboutUs = () => {
   ]
 
   return (
-    <div
-      className="max-w-6xl px-8 md:px-8 mx-auto py-12"
-    >
+    <div className="max-w-6xl px-8 md:px-8 mx-auto py-12">
       <div className="flex items-baseline">
-          <h2 className="text-black-900 font-semibold md:text-5xl  text-3xl md:mt-28 pb-12">
-           About Us
-          </h2>
-          <div className="w-16 h-1 ml-2 bg-blue-500"></div>
-        </div>
-      
+        <h2 className="text-black-900 font-semibold md:text-5xl  text-3xl md:mt-28 pb-12">
+          About Us
+        </h2>
+        <div className="w-16 h-1 ml-2 bg-blue-500"></div>
+      </div>
+
       <div className="flex md:flex-row flex-col md:justify-between">
         <img
           className="h-1/2 max-w-full"
@@ -58,42 +55,49 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="flex flex-wrap my-16 justify-between">
-          <div className="text-center p-4  md:px-4">
-            <h1 className="text-blue-500 font-bold text-5xl">102+</h1>
-            <p className="text-center mt-4 leading-8 text-xl ">VM's <br />
-                Launched
-            </p>
-          </div>
-          <div className="text-center p-4 md:px-4">
-            <h1 className="text-cyan-400 font-bold text-5xl">352+</h1>
-            <p className="text-center mt-4 leading-8 text-xl ">Cloud <br />
-                Skill Sets
-            </p>
-          </div>
-          <div className="text-center p-4 md:px-4">
-            <h1 className="text-blue-500 font-bold text-5xl">12+</h1>
-            <p className="text-center mt-4 leading-8 text-xl ">Customers<br />
-                Served
-            </p>
-          </div>
-          <div className="text-center p-4 md:px-4">
-            <h1 className="text-cyan-400 font-bold text-5xl">6+</h1>
-            <p className="text-center mt-4 leading-8 text-xl ">Applications <br />
-                Delivered
-            </p>
-          </div>
-          <div className="text-center p-4 md:px-4 flex flex-col items-center">
-            <FaTools className="text-5xl text-blue-500"/>
-            <p className="text-center mt-4 leading-8 text-xl ">VM's <br />
-                Launched
-            </p>
-          </div>
-          <div className="text-center p-4 md:px-4 flex flex-col items-center">
-            <RiCustomerService2Line className="text-cyan-400 font-bold text-5xl"/>
-            <p className="text-center mt-4 leading-8 text-xl ">VM's <br />
-                Launched
-            </p>
-          </div>
+        <div className="text-center p-4  md:px-4">
+          <h1 className="text-blue-500 font-bold text-5xl">102+</h1>
+          <p className="text-center mt-4 leading-8 text-xl ">
+            VM's <br />
+            Launched
+          </p>
+        </div>
+        <div className="text-center p-4 md:px-4">
+          <h1 className="text-cyan-400 font-bold text-5xl">352+</h1>
+          <p className="text-center mt-4 leading-8 text-xl ">
+            Cloud <br />
+            Skill Sets
+          </p>
+        </div>
+        <div className="text-center p-4 md:px-4">
+          <h1 className="text-blue-500 font-bold text-5xl">12+</h1>
+          <p className="text-center mt-4 leading-8 text-xl ">
+            Customers
+            <br />
+            Served
+          </p>
+        </div>
+        <div className="text-center p-4 md:px-4">
+          <h1 className="text-cyan-400 font-bold text-5xl">6+</h1>
+          <p className="text-center mt-4 leading-8 text-xl ">
+            Applications <br />
+            Delivered
+          </p>
+        </div>
+        <div className="text-center p-4 md:px-4 flex flex-col items-center">
+          <FaTools className="text-5xl text-blue-500" />
+          <p className="text-center mt-4 leading-8 text-xl ">
+            VM's <br />
+            Launched
+          </p>
+        </div>
+        <div className="text-center p-4 md:px-4 flex flex-col items-center">
+          <RiCustomerService2Line className="text-cyan-400 font-bold text-5xl" />
+          <p className="text-center mt-4 leading-8 text-xl ">
+            VM's <br />
+            Launched
+          </p>
+        </div>
       </div>
     </div>
   )

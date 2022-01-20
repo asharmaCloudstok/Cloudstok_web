@@ -8,6 +8,7 @@ import OurClients from "../views/OurClients";
 import OurServices from "../views/OurServices";
 import Milestones from "../views/Milestones";
 import OurBlogs from "../views/OurBlogs";
+import Testimonials from "../views/Testimonials";
 
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       <Milestones/>
       <OurClients/>
       <OurBlogs/>
+      <Testimonials/>
       <ContactSection/>
     </Layout>
   </>
