@@ -5,20 +5,20 @@ import { FaTools } from "react-icons/fa"
 const ContactSection = () => {
   const url =
     "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/how-to-manage-a-client-relationship-when-your-personalities-are-different-open-graph.jpg"
-  return (
-    <div className="relative">
-      <img
-        class="object-cover w-full"
-        src={url}
-        alt="Flower and sky"
-      />
 
-      <div class="absolute top-0 left-0 w-full h-full bg-gray-500 bg-opacity-50 px-4">
-        <h2 className="text-5xl font-bold text-white text-center md:py-24 py-8">
+  const bgStyle = {
+    background: `url(${url})`,
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover",
+  }
+  return (
+    <div className="" style={bgStyle}>
+      <div class="w-full h-full bg-gray-500 bg-opacity-50 px-6 md:pt-8 md:pb-32 pb-16">
+        <h2 className="text-5xl font-bold text-white text-center md:my-24 py-12">
           Contact Us
         </h2>
-        <div className="mx-auto max-w-4xl md:py-4 md:px-12 bg-white flex flex-col md:flex-row justify-between">
-          <div className="py-8 px-6 md:ml-12 flex flex-col">
+        <div className="mx-auto max-w-4xl p-12 bg-white flex flex-col md:flex-row justify-between">
+          <div className="md:ml-8 md:mr-auto flex flex-col">
             <img
               className="h-48 mx-auto"
               src="https://cdn-icons-png.flaticon.com/512/147/147144.png"
@@ -50,6 +50,7 @@ const ContactSection = () => {
                 Noida Sec-62, 201301
               </p>
             </div>
+           
             <div className="flex mt-12">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,8 +81,8 @@ const ContactSection = () => {
               <p className="ml-4">sales@cloudstok.com</p>
             </div>
           </div>
-          <div className="py-8 md:pl-20 px-6">
-            <div className="flex h-12 items-center px-2 border mt-4 rounded border-gray-200 bg-gray-100">
+          <div className="md:pl-12 md:border-l-2 md:border-gray-200">
+            <div className="flex h-12 items-center px-2 border mt-10 md:mt-0 rounded border-gray-200 bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10 py-2 "
@@ -102,7 +103,7 @@ const ContactSection = () => {
             <div className="flex h-12 items-center px-2 border my-4 rounded border-gray-200 bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 py-2"
+                className="h-10 w-10 p-2"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="gray"
@@ -115,7 +116,7 @@ const ContactSection = () => {
                 />
               </svg>
               <input
-                className="bg-transparent"
+                className="bg-transparent w-full"
                 type="text"
                 placeholder="Phone"
                 name="usrnm"
