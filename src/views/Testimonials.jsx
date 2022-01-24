@@ -2,55 +2,14 @@ import React,{useState} from "react";
 // import Slider from 'react-slick';
 import './test.css';
 import {FaQuoteLeft} from 'react-icons/fa';
-// import TestCard from "../components/TestimonialCard/TestCard";
+
 
 
 
 const Testimonials = () => {
 
-  // const testdata=[
-  //   {
-  //     para:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-  //     title:"Yug - SG Corp",
-  //   },
-  //   {
-  //     para:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-  //     title:"Yug - SG Corp",
-  //   },
-  //   {
-  //     para:" Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-  //     title:"Yug - SG Corp",
-  //   },
-  // ]
-  // const NextArrow =({onClick})=>{
-  //  return(
-  //    <div className="arrow next" onClick={onClick}>
-  // <FaArrowRight/>
-  //    </div>
-  //  )
-  // }
-  // const PrevArrow =({onClick})=>{
-  //   return(
-  //     <div className="arrow prev" onClick={onClick}>
-  //  <FaArrowLeft/>
-  //     </div>
-  //   )
-  //  }
-  // const [testIndex, setTestIndex]= useState(0);
-  // const settings = {
-  //   dots:true,
-  //   className:"center",
-  //   infinite : true,
-  //   lazyload : true,
-  //   speed: 300,
-  //   slideToShow:3,
-  //   slidesToScroll: 3,
-  //   autoplay: true,
-  //   autoplaySpeed: 2000,
-  //   centerMode:true,
-  //   centerPadding:"60px",
-  //  beforeChange:(current,next)=> setTestIndex(next)    
-  // }
+   
+  
   return (
     <div
       className="py-8 bg-[#F4F7FC]"
@@ -64,38 +23,9 @@ const Testimonials = () => {
         </div>
         <div className="max-w-6xl px-8 md:px-8 mx-auto" >
          
-        {/* <Slider {...settings} style={{marginTop:"35px", maxWidth:"1152px"}}> */}
-       
-            {/* {
-              
-            testdata.map((ele,i)=>{
-              return(
-                <>
-          
-           
-   
-     <div className={i===testIndex ? "slide activeSlide" : "slide"}  >
-    <div className="bg-white text-center shadow-lg rounded-lg p-10 relative ">
-    <div className='bg-blue-500 border w-16 h-16 rounded-full text-center absolute -top-10 left-52'> <FaQuoteLeft className="mt-5 text-white ml-5"/> </div>
-        <p>
-          {ele.para}
-                  </p>
-        <h3 className='text-2xl font-semibold'>{ele.title}</h3>
-    </div>
-  
-     </div>
-
-           
-
-                </>
-              )
-            })
-           } */}
-               
-               {/* </Slider> */}
         
       </div>
     </div>
-  )
+  );
 }
 export default Testimonials;

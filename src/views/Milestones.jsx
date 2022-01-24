@@ -2,6 +2,7 @@ import React from "react"
 
 const Milestones = () => {
   
+  
   return (
     <div className="pt-8 pb-12 bg-white">
       <div
@@ -15,8 +16,12 @@ const Milestones = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
      
+         
+          
+
+          </div>
       </div>
-    </div>
+  
   )
 }
 

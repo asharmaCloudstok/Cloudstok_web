@@ -117,7 +117,7 @@ const contact = () => {
           </h2>
           <div className="py-2">
             <div className="flex items-center mb-8">
-             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaMapMarkerAlt className="text-2xl w-9 h-9 ml-3 text-blue-500" /></div>
+             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaMapMarkerAlt className="text-2xl w-9 h-9 mx-auto text-blue-500" /></div>
            <div className="">
            <p className="ml-8 text-gray-500">
                 The Corenthum, Tower B<br />
@@ -126,13 +126,13 @@ const contact = () => {
            </div>
             </div>
             <div className="flex items-center mb-8">
-            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaPhoneVolume className="text-2xl w-9 h-9 ml-3 text-blue-500"/> </div>
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaPhoneVolume className="text-2xl w-9 h-9 mx-auto text-blue-500"/> </div>
               <p className="ml-8 text-gray-500">
                 +91-8800227114
               </p>
             </div>
             <div className="flex items-center my-7">
-            <div className="rounded-full border border-blue-500 w-16 h-16 flex  items-center">    <FaEnvelope className="text-2xl w-9 h-9 ml-3 text-blue-500"/> </div>
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex  items-center">    <FaEnvelope className="text-2xl w-9 h-9 mx-auto text-blue-500"/> </div>
               <p className="ml-8 text-gray-500">
                 sales@cloudstok.com
               </p>
