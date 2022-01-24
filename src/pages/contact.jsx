@@ -1,15 +1,14 @@
 import React from "react"
 import Breadcrumb from "../components/Breadcrumb"
 import Layout from "../components/Layout"
-import { GrLocation } from "react-icons/gr"
-import {FiPhoneCall} from "react-icons/fi"
-import {AiOutlineMail} from 'react-icons/ai'
+import { FaMapMarkerAlt,FaPhoneVolume, FaEnvelope } from "react-icons/fa"
+
 import Pagename from "../components/pagename/Pagename"
 
 const contact = () => {
   return (
     <Layout>
-      <Pagename/>
+      <Pagename name={'Contact Us'}/>
     
       <div className="md:max-w-6xl px-6 md:px-8 mx-auto pb-8">
         <Breadcrumb />
@@ -19,15 +18,10 @@ const contact = () => {
               consectetur adispicing eli, sed do <br />
               eiusmod tempor incidunt ut labore</h2>
               <div className="flex h-12 items-center px-2 border mt-12 rounded-lg border-gray-200 bg-gray-100">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 py-2 "
-                viewBox="0 0 20 20"
-                fill="gray"
-              >
-                <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
-                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-              </svg>
+              <svg className="svg-icon h-10 w-10 p-2" viewBox="0 0 20 20" fill="gray">
+							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+						</svg>
+             
               <input
                 className="w-full p-2 bg-transparent text-sm"
                 type="text"
@@ -37,29 +31,24 @@ const contact = () => {
             </div>
 
             <div className="flex px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
-              <svg
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 p-2"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="gray"
+                className="h-10 w-10 py-2 "
+                viewBox="0 0 20 20"
+                fill="gray"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                />
+                <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
               <input
-                className="bg-transparent w-full text-sm"
+                className="bg-transparent w-full text-sm p-2"
                 type="text"
                 placeholder="Phone"
                 name="usrnm"
               />
             </div>
             <div className="flex h-12 items-center px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
-              <svg
+            <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10 p-2"
                 fill="none"
@@ -74,7 +63,7 @@ const contact = () => {
                 />
               </svg>
               <input
-                class="bg-transparent w-full text-sm"
+                class="bg-transparent w-full text-sm p-2"
                 type="text"
                 placeholder="Username"
                 name="usrnm"
@@ -83,7 +72,7 @@ const contact = () => {
             <div className="flex px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 p-2"
+                className="h-10 w-10 p-2 "
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -97,7 +86,7 @@ const contact = () => {
               </svg>
               <textarea
                 rows={5}
-                className="bg-transparent pt-2 text-sm"
+                className="bg-transparent pt-2 px-1 text-sm"
                 type="text"
                 placeholder="Message"
                 name="usrnm"
@@ -128,20 +117,22 @@ const contact = () => {
           </h2>
           <div className="py-2">
             <div className="flex items-center mb-8">
-              <GrLocation className="text-2xl"/>
-              <p className="ml-8 text-gray-500">
+             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaMapMarkerAlt className="text-2xl w-9 h-9 ml-3 text-blue-500" /></div>
+           <div className="">
+           <p className="ml-8 text-gray-500">
                 The Corenthum, Tower B<br />
                 Noida Sec-62, 201309
               </p>
+           </div>
             </div>
             <div className="flex items-center mb-8">
-              <FiPhoneCall className="text-2xl"/>
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaPhoneVolume className="text-2xl w-9 h-9 ml-3 text-blue-500"/> </div>
               <p className="ml-8 text-gray-500">
                 +91-8800227114
               </p>
             </div>
-            <div className="flex items-center my-8">
-            <AiOutlineMail className="text-2xl"/>
+            <div className="flex items-center my-7">
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex  items-center">    <FaEnvelope className="text-2xl w-9 h-9 ml-3 text-blue-500"/> </div>
               <p className="ml-8 text-gray-500">
                 sales@cloudstok.com
               </p>

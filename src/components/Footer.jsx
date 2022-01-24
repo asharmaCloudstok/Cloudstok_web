@@ -151,7 +151,7 @@ const Footer = () => {
                         />
                       </div>
 
-                      <button className="mt-4 bg-blue-500 w-10/12  text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
+                      <button className="mt-4 bg-blue-500   text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
                         Submit
                       </button>
                     </div>
@@ -200,7 +200,7 @@ const Footer = () => {
               <a className="h-12 w-12 mx-3  cursor-pointer">
                 <img
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"
+                    "https://cdn-icons.flaticon.com/png/512/3670/premium/3670147.png?token=exp=1643017441~hmac=ed1c75f8a9d7eda88005d88f26e09d3d"
                   }
                   alt="facebook"
                 />
@@ -208,7 +208,7 @@ const Footer = () => {
               <a className="h-12 w-12 mx-3  cursor-pointer">
                 <img
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"
+                    "https://cdn-icons-png.flaticon.com/512/145/145807.png"
                   }
                   alt="facebook"
                 />
@@ -216,7 +216,7 @@ const Footer = () => {
               <a className="h-12 w-12 ml-3  cursor-pointer">
                 <img
                   src={
-                    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"
+                    "https://static.cdnlogo.com/logos/t/96/twitter-icon.svg"
                   }
                   alt="facebook"
                 />
