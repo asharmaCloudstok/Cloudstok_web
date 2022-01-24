@@ -1,5 +1,4 @@
 import React from "react"
-import "./about.css"
 import { FaTools } from "react-icons/fa"
 import { RiCustomerService2Line } from "react-icons/ri"
 const AboutUs = () => {

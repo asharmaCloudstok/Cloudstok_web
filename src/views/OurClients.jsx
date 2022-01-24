@@ -1,7 +1,7 @@
 import React from "react"
 import Marquee from "react-fast-marquee"
 import ClientsIcon from "../components/clientsIcon/ClientsIcon"
-import "./about.css"
+
 
 const OurClients = () => {
   let align = ["self-end", "self-start", "self-center"]
