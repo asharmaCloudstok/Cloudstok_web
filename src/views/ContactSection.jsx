@@ -1,6 +1,4 @@
 import React from "react"
-import { GoLocation } from "react-icons"
-import { FaTools } from "react-icons/fa"
 
 const ContactSection = () => {
   const url =
@@ -28,7 +26,7 @@ const ContactSection = () => {
              <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
              <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-9 w-9 mx-auto text-blue-500"
+                class="h-9 w-9 mx-auto text-cyan-500 to blue-500"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -57,7 +55,7 @@ const ContactSection = () => {
             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 mx-auto text-blue-500"
+                className="h-8 w-8 mx-auto text-cyan-500 to blue-500"
                 viewBox="0 0 20 20"
                 fill="none"
                 stroke="currentColor"
@@ -72,7 +70,7 @@ const ContactSection = () => {
             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-9 w-9 mx-auto text-blue-500"
+                className="h-9 w-9 mx-auto text-cyan-500 to blue-500"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
