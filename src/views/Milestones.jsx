@@ -2,10 +2,6 @@ import React from "react"
 import "./style.css"
 
 const Milestones = () => {
-<<<<<<< HEAD
-  
-  
-=======
   let arr = [
     "We Started",
     "First 10 Customers",
@@ -21,7 +17,6 @@ const Milestones = () => {
     "Delivered a financial application along with a funded fintech startup",
   ]
 
->>>>>>> 70ede6796ec5d182129292db71b28aae66016cc6
   return (
     <div className="pt-8 pb-12 bg-white">
       <div
@@ -34,15 +29,6 @@ const Milestones = () => {
           </h2>
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
-     
-         
-          
-
-          </div>
-      </div>
-<<<<<<< HEAD
-  
-=======
       <div className="flex flex-col max-w-6xl px-8 md:px-8 mx-auto pb-12 md:max-w-full">
         {arr.map((el, index) => (
           <>
@@ -54,7 +40,9 @@ const Milestones = () => {
         ))}
       </div>
     </div>
->>>>>>> 70ede6796ec5d182129292db71b28aae66016cc6
+          
+
+      </div>
   )
 }
 
