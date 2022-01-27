@@ -2,20 +2,20 @@ import React from "react"
 import "./style.css"
 
 const Milestones = () => {
-  let arr = [
-    "We Started",
-    "First 10 Customers",
-    "First 100 vm`s Launched",
-    "First Enterprise Client",
-    "AWS Select Tier Partner",
-    "500+ VMs Managed and Growing",
-    "Delivered First Application",
-    "Scaled upto 20 people Company",
-    "On boarded multiple funded fin-tech start-ups",
-    "Implemented DevOps as a service in more than 5 funded start-ups",
-    "Delivered a CRM Application to an Enterprise",
-    "Delivered a financial application along with a funded fintech startup",
-  ]
+  // let arr = [
+  //   "We Started",
+  //   "First 10 Customers",
+  //   "First 100 vm`s Launched",
+  //   "First Enterprise Client",
+  //   "AWS Select Tier Partner",
+  //   "500+ VMs Managed and Growing",
+  //   "Delivered First Application",
+  //   "Scaled upto 20 people Company",
+  //   "On boarded multiple funded fin-tech start-ups",
+  //   "Implemented DevOps as a service in more than 5 funded start-ups",
+  //   "Delivered a CRM Application to an Enterprise",
+  //   "Delivered a financial application along with a funded fintech startup",
+  // ]
 
   return (
     <div className="pt-8 pb-12 bg-white">
@@ -31,18 +31,41 @@ const Milestones = () => {
         </div>
       </div>
       <div className="flex flex-col max-w-6xl px-8 md:px-8 mx-auto pb-12 md:max-w-full">
-        {arr.map((el, index) => (
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile8">
+          <p className="m-5 text-white justify-items-center"> 08</p>
+        </div>
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile7">
+          <p className="m-5 text-white justify-items-center"> 07</p>
+        </div>
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile6">
+          <p className="m-5 text-white justify-items-center"> 06</p>
+        </div>
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile5">
+          <p className="m-5 text-white justify-items-center"> 05</p>
+        </div>
+        {/* {arr.map((el, index) => (
           <>
             <span className="w-12 h-12 bg-red-500 font-medium text-xl inline-flex justify-center items-center rounded-full text-white my-4">
               {index + 1}
             </span>
             <span className="">{el}</span>
           </>
-        ))}
-        {/* <div className="bg-gradient-to-r to-cyan-500 absolute from-blue-500 rounded-full  items-center w-16 h-16">
+        ))} */}
+        <div className="bg-gradient-to-r to-cyan-500 relative top-14 from-blue-500 rounded-full  items-center w-14 h-14">
           <p className="m-5 text-white justify-items-center"> 1 </p>
         </div>
-      <div className="border w-12  border-blue-500 relative top-6"></div> */}
+      <div className=" w-12 h-60  relative top-7 left-14 " id="mile"></div> 
+      <div id="b"></div>
+      <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile2">
+          <p className="ml-5 text-white justify-items-center"> 2 </p>
+        </div>
+        <div id="b-1"></div>
+        <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile3">
+          <p className=" text-white justify-items-center"> 03 </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile4">
+          <p className=" text-white justify-items-center relative -top-64 left-4"> 04 </p>
+        </div>
       </div>
     </div>
   )
