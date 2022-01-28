@@ -66,7 +66,7 @@ const Applications = () => {
         name={"Services"}
         servicename={"Application Development and Modernization"}
       />
-      <div className="bg-blue-100">
+      <div className="bg-bgBlue">
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb
             route1={"Services"}

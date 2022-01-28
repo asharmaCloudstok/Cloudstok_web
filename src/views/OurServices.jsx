@@ -4,7 +4,7 @@ import appimg from "../assets/images/phone.jpg"
 
 const OurServices = () => {
   return (
-    <div className="py-8 bg-blue-100">
+    <div className="py-8 bg-bgBlue">
       <div
         className="max-w-6xl px-8 md:px-8 mx-auto pb-12"
         //   style={{ height: "100vh" }}

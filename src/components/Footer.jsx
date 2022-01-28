@@ -26,7 +26,7 @@ const Footer = () => {
     "Sitemap",
   ]
   return (
-    <div className="bg-gray-900 text-white">
+    <div className="bg-bgDark text-white">
       <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 md:px-8">
         {showModal && (
           <div className="justify-center items-center flex  overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none bg-black bg-opacity-60">
@@ -132,7 +132,7 @@ const Footer = () => {
                       />
                     </div>
 
-                    <button className="mt-4 bg-blue-500   text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
+                    <button className="mt-4 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
                       Submit
                     </button>
                   </div>
@@ -180,7 +180,7 @@ const Footer = () => {
             </div>
             <button
               onClick={() => setShowModal(true)}
-              className="my-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold px-6 py-4 rounded-md uppercase text-sm"
+              className="my-4 bg-gradient-to-r from-gradientBlueOne to-gradientBlueTwo text-white font-bold px-6 py-4 rounded-md uppercase text-sm"
             >
               Subscribe Now
             </button>

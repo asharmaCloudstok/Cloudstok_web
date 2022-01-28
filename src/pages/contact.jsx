@@ -1,27 +1,33 @@
 import React from "react"
 import Breadcrumb from "../components/Breadcrumb"
 import Layout from "../components/Layout"
-import { FaMapMarkerAlt,FaPhoneVolume, FaEnvelope } from "react-icons/fa"
+import { FaMapMarkerAlt, FaPhoneVolume, FaEnvelope } from "react-icons/fa"
 
 import Pagename from "../components/pagename/Pagename"
 
 const contact = () => {
   return (
     <Layout>
-      <Pagename name={'Contact Us'}/>
-    
+      <Pagename name={"Contact Us"} />
+
       <div className="md:max-w-6xl px-6 md:px-8 mx-auto pb-8">
         <Breadcrumb />
         <div className="md:relative flex flex-col">
-        <div className="md:p-12 p-8 md:w-5/12  order-2 bg-gradient-to-r from-blue-500 to-cyan-500 flex justify-center flex-col md:absolute bottom-12 right-5">
-              <h2 className="text-white font-medium text-xl">Lorem Ipsum dolor sit ame, <br />
+          <div className="md:p-12 p-8 md:w-5/12  order-2 bg-gradient-to-tr from-gradientBlueTwo to-gradientBlueOne flex justify-center flex-col md:absolute bottom-12 right-5">
+            <h2 className="text-white font-medium text-xl">
+              Lorem Ipsum dolor sit ame, <br />
               consectetur adispicing eli, sed do <br />
-              eiusmod tempor incidunt ut labore</h2>
-              <div className="flex h-12 items-center px-2 border mt-12 rounded-lg border-gray-200 bg-gray-100">
-              <svg className="svg-icon h-10 w-10 p-2" viewBox="0 0 20 20" fill="gray">
-							<path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
-						</svg>
-             
+              eiusmod tempor incidunt ut labore
+            </h2>
+            <div className="flex h-12 items-center px-2 border mt-12 rounded-lg border-gray-200 bg-gray-100">
+              <svg
+                className="svg-icon h-10 w-10 p-2"
+                viewBox="0 0 20 20"
+                fill="gray"
+              >
+                <path d="M12.075,10.812c1.358-0.853,2.242-2.507,2.242-4.037c0-2.181-1.795-4.618-4.198-4.618S5.921,4.594,5.921,6.775c0,1.53,0.884,3.185,2.242,4.037c-3.222,0.865-5.6,3.807-5.6,7.298c0,0.23,0.189,0.42,0.42,0.42h14.273c0.23,0,0.42-0.189,0.42-0.42C17.676,14.619,15.297,11.677,12.075,10.812 M6.761,6.775c0-2.162,1.773-3.778,3.358-3.778s3.359,1.616,3.359,3.778c0,2.162-1.774,3.778-3.359,3.778S6.761,8.937,6.761,6.775 M3.415,17.69c0.218-3.51,3.142-6.297,6.704-6.297c3.562,0,6.486,2.787,6.705,6.297H3.415z"></path>
+              </svg>
+
               <input
                 className="w-full p-2 bg-transparent text-sm"
                 type="text"
@@ -31,7 +37,7 @@ const contact = () => {
             </div>
 
             <div className="flex px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
-            <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10 py-2 "
                 viewBox="0 0 20 20"
@@ -48,7 +54,7 @@ const contact = () => {
               />
             </div>
             <div className="flex h-12 items-center px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
-            <svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-10 w-10 p-2"
                 fill="none"
@@ -93,51 +99,56 @@ const contact = () => {
               />
             </div>
 
-            <button className="mt-4 bg-blue-700 text-white font-medium px-6 py-3 rounded-lg uppercase text-lg w-full">
+            <button className="mt-4 bg-ctaBlue text-white font-medium px-6 py-3 rounded-lg uppercase text-lg w-full">
               Submit
             </button>
             <div className="my-4 text-white text-center text-sm">
-                Company Name not sell, share or trade customer <br/>
-                information. Your privacy is important to us.
+              Company Name not sell, share or trade customer <br />
+              information. Your privacy is important to us.
             </div>
           </div>
-        <div className="order-1">
-          <p className="md:mt-8 mt-6 text-md leading-8">
-            Wherever you are in cloud journey we have the <br />
-            experience and expertise to transform your business for the <br />
-            better.
-            <br /> For more than 10 years, Cloudreach has been helping <br />
-            high profile, complex organizations adopt cutting <br />
-            edge technologies to solve challenge and create new <br />
-            opportunities.
-          </p>
-          <p className="mt-6 text-md leading-8">Let us help you know</p>
-          <h2 className="my-8 text-md font-medium">
-            We will get back to you ASAP!
-          </h2>
-          <div className="py-2">
-            <div className="flex items-center mb-8">
-             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaMapMarkerAlt className="text-2xl w-9 h-9 mx-auto text-blue-500" /></div>
-           <div className="">
-           <p className="ml-8 text-gray-500">
-                The Corenthum, Tower B<br />
-                Noida Sec-62, 201309
-              </p>
-           </div>
+          <div className="order-1">
+            <p className="md:mt-8 mt-6 text-md leading-8">
+              Wherever you are in cloud journey we have the <br />
+              experience and expertise to transform your business for the <br />
+              better.
+              <br /> For more than 10 years, Cloudreach has been helping <br />
+              high profile, complex organizations adopt cutting <br />
+              edge technologies to solve challenge and create new <br />
+              opportunities.
+            </p>
+            <p className="mt-6 text-md leading-8">Let us help you know</p>
+            <h2 className="my-8 text-md font-medium">
+              We will get back to you ASAP!
+            </h2>
+            <div className="py-2">
+              <div className="flex items-center mb-8">
+                <div className="rounded-full w-16 h-16 flex items-center">
+                  {" "}
+                  <FaMapMarkerAlt className="text-lg mx-auto" />
+                </div>
+                <div className="">
+                  <p className="ml-8 text-gray-500">
+                    The Corenthum, Tower B<br />
+                    Noida Sec-62, 201309
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center mb-8">
+                <div className="rounded-full  w-16 h-16 flex items-center">
+                  {" "}
+                  <FaPhoneVolume className="text-lg mx-auto " />{" "}
+                </div>
+                <p className="ml-8 text-gray-500">+91-8800227114</p>
+              </div>
+              <div className="flex items-center my-7">
+                <div className="rounded-full w-16 h-16 flex  items-center">
+                  {" "}
+                  <FaEnvelope className="text-lg mx-auto" />{" "}
+                </div>
+                <p className="ml-8 text-gray-500">sales@cloudstok.com</p>
+              </div>
             </div>
-            <div className="flex items-center mb-8">
-            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">  <FaPhoneVolume className="text-2xl w-9 h-9 mx-auto text-blue-500"/> </div>
-              <p className="ml-8 text-gray-500">
-                +91-8800227114
-              </p>
-            </div>
-            <div className="flex items-center my-7">
-            <div className="rounded-full border border-blue-500 w-16 h-16 flex  items-center">    <FaEnvelope className="text-2xl w-9 h-9 mx-auto text-blue-500"/> </div>
-              <p className="ml-8 text-gray-500">
-                sales@cloudstok.com
-              </p>
-            </div>
-          </div>
           </div>
         </div>
       </div>

@@ -29,6 +29,7 @@ const Milestones = () => {
           </h2>
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
+      </div>
       <div className="flex flex-col max-w-6xl px-8 md:px-8 mx-auto pb-12 md:max-w-full">
         {arr.map((el, index) => (
           <>
@@ -38,11 +39,12 @@ const Milestones = () => {
             <span className="">{el}</span>
           </>
         ))}
+        {/* <div className="bg-gradient-to-r to-cyan-500 absolute from-blue-500 rounded-full  items-center w-16 h-16">
+          <p className="m-5 text-white justify-items-center"> 1 </p>
+        </div>
+      <div className="border w-12  border-blue-500 relative top-6"></div> */}
       </div>
     </div>
-          
-
-      </div>
   )
 }
 

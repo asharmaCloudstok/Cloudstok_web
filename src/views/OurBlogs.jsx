@@ -27,7 +27,7 @@ const OurBlogs = () => {
         <h2 className="text-black-900 font-semibold md:text-5xl text-3xl">
           Our Blogs
         </h2>
-        <div className="w-16 h-1 ml-2 bg-blue-500"></div>
+        <div className="w-16 h-1 ml-2 bg-titleBlue"></div>
       </div>
       <div className="flex justify-between md:flex-row flex-col">
         <SuccessCard />
@@ -38,7 +38,7 @@ const OurBlogs = () => {
       <div className="flex justify-center">
         <button
           // onClick={() => setShowModal(true)}
-          className="mt-12 bg-gradient-to-r to-cyan-500 from-blue-500 text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
+          className="mt-12 bg-gradient-to-r to-gradientBlueOne from-gradientBlueTwo text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
         >
           More Blogs
         </button>

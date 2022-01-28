@@ -19,68 +19,37 @@ const Testimonials = () => {
       title: "Yug - SG Corp",
     },
   ]
-  // const NextArrow =({onClick})=>{
-  //  return(
-  //    <div className="arrow next" onClick={onClick}>
-  // <FaArrowRight/>
-  //    </div>
-  //  )
-  // }
-  // const PrevArrow =({onClick})=>{
-  //   return(
-  //     <div className="arrow prev" onClick={onClick}>
-  //  <FaArrowLeft/>
-  //     </div>
-  //   )
-  //  }
+
   const [testIndex, setTestIndex] = useState(0)
   const settings = {
     dots: true,
-    // className:"center",
     infinite: true,
     lazyload: true,
-    speed: 300,
+    speed: 3000,
     slideToShow: 3,
-
     autoplay: true,
     autoplaySpeed: 2000,
-    centerMode: true,
-    centerPadding: "60px",
     beforeChange: (current, next) => setTestIndex(next),
   }
   return (
-    <div
-      className="py-8 bg-[#F4F7FC]"
-      //   style={{ height: "100vh" }}
-    >
-      <div className="flex md:mt-20 pb-12 items-baseline max-w-6xl px-8 md:px-8 mx-auto">
+    <div className="py-8 bg-bgBlue">
+      <div className="flex md:mt-20 pb-12 h-1/2n items-baseline max-w-6xl px-8 md:px-8 mx-auto">
         <h2 className="text-black-900 font-semibold md:text-5xl text-3xl">
           Testimonials
         </h2>
         <div className="w-16 h-1 ml-2 bg-blue-500"></div>
       </div>
-      <div className="max-w-6xl px-8 md:px-8 mx-auto">
-        <Slider {...settings} style={{ border: "1px solid red" }}>
-          {testdata.map((pasa, i) => {
-            return (
-              <>
-                <div
-                  className={i === testIndex ? "slide activeSlide" : "slide"}
-                >
-                  <p>{pasa.para}</p>
-                  <h2>{pasa.title}</h2>
-                </div>
-              </>
-            )
-          })}
+      <div className="max-w-6xl px-8 md:px-8 mx-auto pb-24">
+        <Slider {...settings}  >
+          {testdata.map((pasa, i) =><TestCard/>)}
         </Slider>
-        {testdata.map((ele, i) => {
+        {/* {testdata.map((ele, i) => {
           return (
             <>
               <div className="grid grid-cols-3 justify-center" key={i}>
                 <Slider
                   {...settings}
-                  style={{ marginTop: "35px", maxWidth: "1152px" }}
+                  // style={{ marginTop: "35px", maxWidth: "1152px" }}
                 >
                   <div
                     className={i === testIndex ? "slide activeSlide" : "slide"}
@@ -98,7 +67,7 @@ const Testimonials = () => {
               </div>
             </>
           )
-        })}
+        })} */}
       </div>
     </div>
   )

@@ -34,8 +34,9 @@ const Services = () => {
       <Layout>
         <Pagename name={"Services"} />
         <div
-          className="pb-8 md:pb-20 w-full bg-blue-100" //   style={{ height: "100vh" }}
+          className="pb-8 md:pb-20 w-full bg-bgBlue" //   style={{ height: "100vh" }}
         >
+          
           <div className="max-w-6xl px-8 md:px-8 mx-auto">
             <Breadcrumb route1={"Services"} />
            <div className="grid sm:grid-cols-2 gap-8 md:mt-12">

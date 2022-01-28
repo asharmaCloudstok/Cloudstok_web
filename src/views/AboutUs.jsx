@@ -17,7 +17,7 @@ const AboutUs = () => {
         <h2 className="text-black-900 font-semibold md:text-5xl  text-3xl md:mt-28 pb-12">
           About Us
         </h2>
-        <div className="w-16 h-1 ml-2 bg-blue-500"></div>
+        <div className="w-16 h-1 ml-2 bg-titleBlue"></div>
       </div>
 
       <div className="flex md:flex-row flex-col md:justify-between">
@@ -29,7 +29,7 @@ const AboutUs = () => {
         />
 
         <div className="md:pl-12">
-          <h4 className="text-blue-400 text-2xl md:my-0 mt-8">
+          <h4 className="text-ctaBlue text-2xl md:my-0 mt-8">
             Accelerate your journey to digitalization
           </h4>
           <p className="text-md leading-7 mt-8 text-justify">
@@ -48,28 +48,28 @@ const AboutUs = () => {
             consulting will help you in an easy transition to digital
             infrastructure
           </p>
-          <button className="mt-10 bg-blue-500 text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
+          <button className="mt-10 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
             more about us
           </button>
         </div>
       </div>
       <div className="flex flex-wrap my-16 justify-between">
         <div className="text-center p-4  md:px-4">
-          <h1 className="text-blue-500 font-bold text-5xl">102+</h1>
+          <h1 className="text-gradientBlueTwo font-bold text-5xl">102+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
             VM's <br />
             Launched
           </p>
         </div>
         <div className="text-center p-4 md:px-4">
-          <h1 className="text-cyan-400 font-bold text-5xl">352+</h1>
+          <h1 className="text-gradientBlueOne font-bold text-5xl">352+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
             Cloud <br />
             Skill Sets
           </p>
         </div>
         <div className="text-center p-4 md:px-4">
-          <h1 className="text-blue-500 font-bold text-5xl">12+</h1>
+          <h1 className="text-gradientBlueTwo font-bold text-5xl">12+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
             Customers
             <br />
@@ -77,21 +77,21 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="text-center p-4 md:px-4">
-          <h1 className="text-cyan-400 font-bold text-5xl">6+</h1>
+          <h1 className="text-gradientBlueOne font-bold text-5xl">6+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
             Applications <br />
             Delivered
           </p>
         </div>
         <div className="text-center p-4 md:px-4 flex flex-col items-center">
-          <FaTools className="text-5xl text-blue-500" />
+          <FaTools className="text-5xl text-gradientBlueTwo" />
           <p className="text-center mt-4 leading-8 text-xl ">
             VM's <br />
             Launched
           </p>
         </div>
         <div className="text-center p-4 md:px-4 flex flex-col items-center">
-          <RiCustomerService2Line className="text-cyan-400 font-bold text-5xl" />
+          <RiCustomerService2Line className="text-gradientBlueOne font-bold text-5xl" />
           <p className="text-center mt-4 leading-8 text-xl ">
             VM's <br />
             Launched

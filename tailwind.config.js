@@ -1,4 +1,3 @@
-const colors = require('tailwindcss/colors')
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -6,19 +5,23 @@ module.exports = {
 
   theme: {
     container: {
-      center:true
+      center: true
     },
-   
+
     fontFamily: {
       sans: 'Poppins',
     },
-    extends: {
-      colors:{
-        black: colors.black,
-        'blue-dark': '#60a3fa',
-        'blue-light':'#41e8f2'
-      },
-    }
+    extend: {
+      colors:
+      {
+        'bgDark': '#191919',
+        'bgBlue': '#f4f7fc',
+        'gradientBlueOne': '#4bd3f4',
+        'gradientBlueTwo': '#62a0fa',
+        'ctaBlue': '#2171a3',
+        'titleBlue': '#6795fb'
+      }
+    },
   },
   plugins: [],
 }
