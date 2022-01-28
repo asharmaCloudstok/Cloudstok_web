@@ -8,3 +8,452 @@
     height: 8px;
     background: red ;
 }
+
+#mile{
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 48px;
+   height: 240px;
+   position: relative;
+   top: 28px;
+   left: 56px;
+}
+#b{
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius:40px;
+    position: relative;
+    top: 26px;
+    left:102px;
+    width: 50px;
+    height: 20px;
+}
+#mile2{
+    position: relative;
+    left: 150px;
+    top: -8px;
+}
+#mile2::before{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    border-right: 2px solid blue;
+    /* border-bottom-left-radius:9999px ; */
+    border-bottom-right-radius:900px ; 
+    position: relative;
+    top: 15px;
+    left:55px;
+    width: 50px;
+    height: 20px;
+}
+#b-1{
+    border-left: 2px solid blue;
+    border-top: 2px solid blue;
+    border-top-left-radius: 40px;
+    position: relative;
+    top:-238px;
+    left: 253px;
+    width: 50px;
+    height: 190px;
+}
+#mile3{
+    position: relative;
+    top: -453px;
+    left: 303px;
+}
+#mile3::after{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 50px;
+   height: 141px;
+   position: relative;
+   top: -70px;
+   left: 55px;
+}
+#mile3::before{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius:9999px ;
+    border-bottom-right-radius:900px ;
+    position: relative;
+    top: 163px;
+    left:103px;
+    width: 50px;
+    height: 20px;
+}
+#mile4{
+    position: relative;
+    top: -355px;
+    left: 455px;
+
+}
+#mile4::before{
+    content: '';
+    display: block;
+    border-right: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-bottom: 2px solid blue;
+   
+    position: relative;
+    top:-265px;
+    left: 55px;
+    width: 50px;
+    height: 295px;
+}
+#mile5{
+    position: relative;
+    left: 531px;
+    top: 150px;
+    z-index: 2;
+}
+#mile5::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-top-left-radius: 50px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: -115px;
+    left: 27px;
+}
+#mile6{
+    position: relative;
+    left: 605px;
+    top: 60px;
+    z-index: 3;
+}
+#mile6::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 50px;
+   height: 200px;
+   position: relative;
+   top: 29px;
+   left: 55px;
+}
+#mile6::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:0px ;
+    position: relative;
+    top: -107px;
+    left:103px;
+    width: 60px;
+    height: 20px;   
+}
+#mile7{
+    position: relative;
+    top: 330px;
+    left: 766px;
+    z-index: 4;
+}
+#mile7::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 50px;
+   height: 141px;
+   position: relative;
+   top: 30px;
+   left: 55px;
+
+}
+#mile7::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:0px ;
+    position: relative;
+    top: -106px;
+    left:103px;
+    width: 50px;
+    height: 20px;   
+}
+#mile8{
+    position: relative;
+    top: -355px;
+    left: 918px;
+}
+#mile8::before{
+    content: '';
+    display: block;
+    border-right: 2px solid blue;
+    border-bottom-right-radius: 30px;
+    border-bottom: 2px solid blue;
+   
+    position: relative;
+    top:-325px;
+    left: 55px;
+    width: 50px;
+    height: 360px;
+}
+#mile9{
+    position: relative;
+    top: -570px;
+    left: 995px;
+}
+#mile9::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-top-left-radius: 50px;
+    width: 50px;
+    height: 20px;
+    position: relative;
+    top: -185px;
+    left: 26px;
+}
+#mile10{
+    position: relative;
+    top: -842px;
+    left: 1070px;
+}
+#mile10::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 50px;
+   height: 135px;
+   position: relative;
+   top: 32px;
+   left: 55px;
+}
+#mile10::after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius:50px;
+    border-bottom-right-radius:0px ;
+    position: relative;
+    top: -105px;
+    left:103px;
+    width: 50px;
+    height: 30px;  
+}
+#mile11{
+    position: relative;
+    top:478px;
+    left: 1220px;
+    
+}
+#mile11::after{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-right: 2px solid blue;
+    border-top-right-radius:40px ;
+   width: 30px;
+   height: 60px;
+   position: relative;
+   top: -256px;
+   left: 1px;
+}
+#mile11::before{
+    content: '';
+    display: block;
+    border-right: 2px solid blue;
+    border-bottom: 2px solid blue;
+    border-bottom-right-radius: 40px;
+    width: 135px;
+    height: 60px;
+    position: relative;
+    top: 55px;
+    left: -105px;
+}
+#mile12{
+    position: relative;
+    top: 670px;
+    left: 1239px;
+}
+#mile12::before{
+    content: '';
+    display: block;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-top-left-radius: 40px;
+    width: 20px;
+    height: 30px;
+    position: relative;
+    bottom: 135px;
+    right: 142px;
+}
+#mile12::after{
+    content: '';
+    display: block;
+    width: 145px;
+    height: 138px;
+    
+    border-bottom: 2px solid blue;
+    border-left: 2px solid blue;
+    border-bottom-left-radius: 40px;
+    position: relative;
+    bottom: 247px;
+
+    right: 142px;
+}
+.one{
+    position: relative;
+    top: 18px;
+    left: 17px;
+  color: white;
+}
+.two{
+    position: relative;
+    top: -2px;
+    left: 15px;
+    color: white;
+}
+.three{
+    position: relative;
+    left: 16px;
+    top: -3px;
+    color: white;
+}
+.four{
+    position: relative;
+    bottom: 278px;
+    right: -15px;
+    color: white;
+}
+.five{
+    position: relative;
+    bottom: 22px;
+    right: 4px;
+    color: white;
+}
+.six{
+    position: relative;
+    bottom: 203px;
+    right: 2px;
+    color: white;
+}
+.seven{
+    position: relative;
+    bottom: 144px;
+    right: 2px;
+    color: white;
+}
+.eight{
+    position: relative;
+    bottom: 365px;
+    right: 2px;
+    color: white;
+}
+.nine{
+    position: relative;
+    bottom: 22px;
+    right: 2px;
+    color: white;
+}
+.ten{
+    position: relative;
+    bottom: 137px;
+    color: white;
+}
+.eleven{
+    position: relative;
+    bottom: 63px;
+    right: -2px;
+    color: white;
+}
+.twelve{
+    position: relative;
+    bottom: 33px;
+    color: white;
+}
+
+
+/* heading styling */
+.one-para{
+    position: relative;
+    top: -50px;
+    left: 0px;
+    width: 100px;
+
+}
+.two-para{
+    position: relative;
+    top: 15px;
+    left: 0px;
+}
+.three-para{
+    position: relative;
+    left: 0px;
+    top: -90px;
+    width: 120px;
+}
+.four-para{
+    position: relative;
+    bottom: 258px;
+    right: 15px;
+    width: 120px;
+}
+.five-para{
+    position: relative;
+    bottom: 80px;
+    right: 90px;
+    width: 100px;
+}
+.six-para{
+    position: relative;
+    bottom: 335px;
+    right: 8px;
+    width: 150px;
+}
+.seven-para{
+    position: relative;
+    bottom: 144px;
+    right: 2px;
+}
+.eight-para{
+    position: relative;
+    bottom: 555px;
+    right: 10px;
+}
+.nine-para{
+    position: relative;
+    bottom: 90px;
+    right: -62px;
+    width: 150px;
+}
+.ten-para{
+    position: relative;
+    bottom:280px;
+    right: 50px;
+    width: 200px;
+}
+.eleven-para{
+    position: relative;
+    bottom: 136px;
+    right: -60px;
+    width: 150px;
+}
+.twelve-para{
+    position: relative;
+    bottom: 180px;
+    right: 80px;
+    width: 300px;
+}

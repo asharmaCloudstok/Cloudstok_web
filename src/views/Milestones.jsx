@@ -2,23 +2,23 @@ import React from "react"
 import "./style.css"
 
 const Milestones = () => {
-  let arr = [
-    "We Started",
-    "First 10 Customers",
-    "First 100 vm`s Launched",
-    "First Enterprise Client",
-    "AWS Select Tier Partner",
-    "500+ VMs Managed and Growing",
-    "Delivered First Application",
-    "Scaled upto 20 people Company",
-    "On boarded multiple funded fin-tech start-ups",
-    "Implemented DevOps as a service in more than 5 funded start-ups",
-    "Delivered a CRM Application to an Enterprise",
-    "Delivered a financial application along with a funded fintech startup",
-  ]
+  // let arr = [
+  //   "We Started",
+  //   "First 10 Customers",
+  //   "First 100 vm`s Launched",
+  //   "First Enterprise Client",
+  //   "AWS Select Tier Partner",
+  //   "500+ VMs Managed and Growing",
+  //   "Delivered First Application",
+  //   "Scaled upto 20 people Company",
+  //   "On boarded multiple funded fin-tech start-ups",
+  //   "Implemented DevOps as a service in more than 5 funded start-ups",
+  //   "Delivered a CRM Application to an Enterprise",
+  //   "Delivered a financial application along with a funded fintech startup",
+  // ]
 
   return (
-    <div className="pt-8 pb-12 bg-white">
+    <div className=" bg-white">
       <div
         className="max-w-6xl px-8 md:px-8 mx-auto pb-12"
         //   style={{ height: "100vh" }}
@@ -30,19 +30,73 @@ const Milestones = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
       </div>
-      <div className="flex flex-col max-w-6xl px-8 md:px-8 mx-auto pb-12 md:max-w-full">
-        {arr.map((el, index) => (
+      <div className="flex flex-col max-w-full mx-auto overflow-hidden  pr-12 pl-2 ">
+     
+        <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile11">
+          <p className="m-5  justify-items-center eleven"> 11 </p>
+          <p className="eleven-para"> Delivered a CRM Application to an Enterprise </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile12">
+          <p className="m-5 justify-items-center twelve"> 12 </p>
+          <p className="twelve-para"> Delivered a financial application along with a funded fintech startup" </p>
+        </div>
+
+
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile7">
+          <p className="m-5  justify-items-center seven"> 07</p>
+          <p className="seven-para"> Delivery First Application </p>
+        </div>
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile6">
+          <p className="m-5  justify-items-center six "> 06</p>
+          <p className="six-para"> 500+ VM's Managed and growing  </p>
+        </div>
+      <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile5">
+          <p className="m-5  justify-items-center five"> 05</p>
+          <p className="five-para"> AWS Select tier Partner </p>
+        </div>
+        
+        
+        {/* {arr.map((el, index) => (
           <>
             <span className="w-12 h-12 bg-red-500 font-medium text-xl inline-flex justify-center items-center rounded-full text-white my-4">
               {index + 1}
             </span>
             <span className="">{el}</span>
           </>
-        ))}
-        {/* <div className="bg-gradient-to-r to-cyan-500 absolute from-blue-500 rounded-full  items-center w-16 h-16">
-          <p className="m-5 text-white justify-items-center"> 1 </p>
+        ))} */}
+      
+        <div className="bg-gradient-to-r to-cyan-500 relative top-14 from-blue-500 rounded-full  items-center w-14 h-14">
+          <p className="one  justify-items-center"> 01 </p>
+          <p className="one-para">We Started </p>
         </div>
-      <div className="border w-12  border-blue-500 relative top-6"></div> */}
+        
+      <div id="mile"></div> 
+      <div id="b"></div>
+      <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile2">
+          <p className="two  justify-items-center"> 02 </p>
+          <p className="two-para">First 10 Customer </p>
+        </div>
+        <div id="b-1"></div>
+        <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile3">
+          <p className="  justify-items-center three"> 03 </p>
+          <p className="three-para"> First 100 Vm's Launched </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile4">
+          <p className="  justify-items-center four"> 04 </p>
+          <p className="four-para"> First Enterprise Client </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile8">
+          <p className="m-5  justify-items-center eight"> 08</p>
+          <p className="eight-para"> Scaled upto 20 people company </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile9">
+          <p className="m-5  justify-items-center nine"> 09</p>
+          <p className="nine-para"> On boarded multiple funded fin-tech start-ups </p>
+        </div>
+        <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile10">
+          <p className="m-5  justify-items-center ten"> 10 </p>
+          <p className="ten-para"> Implemented DevOps as a service in more than 5 funded start-ups  </p>
+        </div>
       </div>
     </div>
   )
