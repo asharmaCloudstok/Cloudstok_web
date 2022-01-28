@@ -92,7 +92,7 @@ const Testimonials = () => {
             })
            } 
                
-                </Slider>
+                </Slider> 
         
       </div>
     </div>

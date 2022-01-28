@@ -1,4 +1,8 @@
 import React from "react"
+import c from '../assets/images/cloud1.png';
+import d from '../assets/images/cloud2.png';
+import e from '../assets/images/cloud3.png';
+import f from '../assets/images/cloud4.png';
 import "./style.css"
 
 const Milestones = () => {
@@ -28,10 +32,15 @@ const Milestones = () => {
             The Milestones of our Journey
           </h2>
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
+          
         </div>
+          <img src={c} alt="" className="cloud-img" />
+          <img src={d} alt="" className="cloud1-img" />
+          <img src={e} alt="" className="cloud2-img" />
+          <img src={f} alt="" className="cloud3-img" />
       </div>
-      <div className="flex flex-col max-w-full mx-auto overflow-hidden  pr-12 pl-2 ">
-     
+      <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full relative -top-60 ">
+        
         <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile11">
           <p className="m-5  justify-items-center eleven"> 11 </p>
           <p className="eleven-para"> Delivered a CRM Application to an Enterprise </p>
@@ -69,7 +78,7 @@ const Milestones = () => {
           <p className="one  justify-items-center"> 01 </p>
           <p className="one-para">We Started </p>
         </div>
-        
+      
       <div id="mile"></div> 
       <div id="b"></div>
       <div className="bg-gradient-to-r to-cyan-500 from-blue-500 rounded-full  items-center w-14 h-14" id="mile2">
@@ -98,6 +107,7 @@ const Milestones = () => {
           <p className="ten-para"> Implemented DevOps as a service in more than 5 funded start-ups  </p>
         </div>
       </div>
+    
     </div>
   )
 }

@@ -232,7 +232,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex justify-center w-full bg-black p-4">
-        <h2>Copyright&copy; 2021 Cloudstok</h2>
+        <h2>Copyright&copy; 2022 Cloudstok</h2>
       </div>
     </div>
   )

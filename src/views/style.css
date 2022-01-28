@@ -1,6 +1,4 @@
-.numIcon{
-    
-}
+
 .numicon::after{
     content: '';
     display: block;
@@ -456,4 +454,31 @@
     bottom: 180px;
     right: 130px;
     width: 300px;
+}
+
+/* cloud images styling */
+.cloud-img{
+    /* width: 100px;
+    height: 80px; */
+    position: relative;
+    top: 250px;
+}
+.cloud1-img{
+    /* width: 100px;
+    height: 80px; */
+    position: relative;
+    top:360px;
+    left: 740px;
+}
+.cloud2-img{
+    /* width: 100px;
+    height: 80px; */
+    position: relative;
+    top:0px;
+    left: 1000px;
+}
+.cloud3-img{
+   position: relative;
+   top: 500px;
+   left: 470px;
 }
