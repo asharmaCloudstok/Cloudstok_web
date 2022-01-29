@@ -1,5 +1,5 @@
 import React from "react"
-
+import {FaMapMarkerAlt,FaPhoneVolume,FaEnvelope} from 'react-icons/fa';
 const ContactSection = () => {
   const url =
     "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/how-to-manage-a-client-relationship-when-your-personalities-are-different-open-graph.jpg"
@@ -23,6 +23,7 @@ const ContactSection = () => {
               alt="avatar"
             />
             <div className="flex mt-6 items-center">
+<<<<<<< HEAD
              <div className="rounded-full w-16 h-16 flex items-center">
              <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +45,10 @@ const ContactSection = () => {
                   d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                 />
               </svg>
+=======
+             <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
+             <FaMapMarkerAlt className="text-2xl w-9 h-9 mx-auto text-cyan-500 to blue-500" />
+>>>>>>> 2cba1d65f2212d010f2cc43aa33e1786d335a860
              </div>
               <p className="ml-4">
                 The Corenthum, Tower B, <br />
@@ -52,6 +57,7 @@ const ContactSection = () => {
             </div>
            
             <div className="flex mt-6">
+<<<<<<< HEAD
             <div className="rounded-full  w-16 h-16 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +69,15 @@ const ContactSection = () => {
                 <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
               </svg>
+=======
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
+            <FaPhoneVolume className="text-2xl w-9 h-9 mx-auto text-cyan-500 to blue-500"/>
+>>>>>>> 2cba1d65f2212d010f2cc43aa33e1786d335a860
               </div>
               <p className="ml-4 mt-4">+91-8800227144</p>
             </div>
             <div className="flex mt-6">
+<<<<<<< HEAD
             <div className="rounded-full  w-16 h-16 flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +93,10 @@ const ContactSection = () => {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
+=======
+            <div className="rounded-full border border-blue-500 w-16 h-16 flex items-center">
+            <FaEnvelope className="text-2xl w-9 h-9 mx-auto text-cyan-500 to blue-500"/>
+>>>>>>> 2cba1d65f2212d010f2cc43aa33e1786d335a860
               </div>
               <p className="ml-4 mt-4">sales@cloudstok.com</p>
             </div>
