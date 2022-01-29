@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import Slider from "react-slick"
 import "./test.css"
-import { FaArrowRight, FaArrowLeft } from "react-icons"
+import { FaArrowRight, FaArrowLeft, FaQuoteLeft } from "react-icons/fa"
 import TestCard from "../components/TestimonialCard/TestCard"
 
 const Testimonials = () => {
@@ -38,72 +38,28 @@ const Testimonials = () => {
           Testimonials
         </h2>
         <div className="w-16 h-1 ml-2 bg-blue-500"></div>
-<<<<<<< HEAD
       </div>
-      <div className="max-w-6xl px-8 md:px-8 mx-auto pb-24">
-        <Slider {...settings}  >
-          {testdata.map((pasa, i) =><TestCard/>)}
-        </Slider>
-        {/* {testdata.map((ele, i) => {
-          return (
-            <>
-              <div className="grid grid-cols-3 justify-center" key={i}>
-                <Slider
-                  {...settings}
-                  // style={{ marginTop: "35px", maxWidth: "1152px" }}
+      <div className="max-w-6xl px-8 md:px-8 mx-auto">
+        <Slider {...settings} style={{ marginTop: "35px", maxWidth: "1152px" }}>
+          {testdata.map((ele, i) => {
+            return (
+              <>
+                <div
+                  className={i === testIndex ? "slide activeSlide" : "slide"}
                 >
-                  <div
-                    className={i === testIndex ? "slide activeSlide" : "slide"}
-                  >
-                    <div className="bg-white text-center shadow-lg rounded-lg p-10 relative ">
-                      <div className="bg-blue-500 border w-16 h-16 rounded-full text-center absolute -top-10 left-52">
-                        {" "}
-                        <p className="text-7xl mt-2 text-white"> “ </p>
-                      </div>
-                      <p>{ele.para}</p>
-                      <h3 className="text-2xl font-semibold">{ele.title}</h3>
+                  <div className="bg-white text-center shadow-lg rounded-lg p-10 relative ">
+                    <div className="bg-blue-500 border w-16 h-16 rounded-full text-center absolute -top-10 left-52">
+                      {" "}
+                      <FaQuoteLeft className="mt-5 text-white ml-5" />{" "}
                     </div>
+                    <p>{ele.para}</p>
+                    <h3 className="text-2xl font-semibold">{ele.title}</h3>
                   </div>
-                </Slider>
-              </div>
-            </>
-          )
-        })} */}
-=======
-        </div>
-        <div className="max-w-6xl px-8 md:px-8 mx-auto" >
-         
-        <Slider {...settings} style={{marginTop:"35px", maxWidth:"1152px"}}> 
-       
-            {
-              
-            testdata.map((ele,i)=>{
-              return(
-                <>
-          
-           
-   
-     <div className={i===testIndex ? "slide activeSlide" : "slide"}  >
-    <div className="bg-white text-center shadow-lg rounded-lg p-10 relative ">
-    <div className='bg-blue-500 border w-16 h-16 rounded-full text-center absolute -top-10 left-52'> <FaQuoteLeft className="mt-5 text-white ml-5"/> </div>
-        <p>
-          {ele.para}
-                  </p>
-        <h3 className='text-2xl font-semibold'>{ele.title}</h3>
-    </div>
-  
-     </div>
-
-           
-
-                </>
-              )
-            })
-           } 
-               
-                </Slider> 
-        
->>>>>>> 2cba1d65f2212d010f2cc43aa33e1786d335a860
+                </div>
+              </>
+            )
+          })}
+        </Slider>
       </div>
     </div>
   )
