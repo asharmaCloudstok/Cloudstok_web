@@ -7,3 +7,16 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
 } */
+
+
+@media screen and (min-width:768px) {
+    .hero {
+        background-image: url("../assets/images/squareBgOne.png"),
+          url("../assets/images/squareTwo.png");
+        background-repeat: no-repeat;
+        background-size: 200px, 300px;
+        background-position: top -30px left 0px, bottom 0px right 0px;
+    }
+}
+
+

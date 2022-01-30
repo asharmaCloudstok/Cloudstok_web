@@ -1,6 +1,10 @@
 import React from "react"
 import { BsArrowRight } from "react-icons/bs"
-import appimg from "../assets/images/phone.jpg"
+import serviceOne from "../assets/images/serviceOne.png"
+import serviceTwo from "../assets/images/serviceTwo.png"
+import serviceThree from "../assets/images/serviceThree.png"
+import serviceFour from "../assets/images/serviceFour.png"
+
 
 const OurServices = () => {
   return (
@@ -28,7 +32,7 @@ const OurServices = () => {
             </p>
             <BsArrowRight className="mt-8 text-5xl font-normal" />
           </div>
-          <img src={appimg} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
+          <img src={serviceOne} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
         </div>
         {/* Item second  */}
         <div className="flex my-8 p-8 justify-around items-center  md:flex-row flex-col">
@@ -45,7 +49,7 @@ const OurServices = () => {
               Know More
             </button>
           </div>
-          <img src={appimg} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
+          <img src={serviceTwo} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
         </div>
         {/* Item third  */}
         <div className="flex my-8 p-8 justify-around items-center  md:flex-row flex-col">
@@ -61,7 +65,7 @@ const OurServices = () => {
             </p>
             <BsArrowRight className="mt-8 text-5xl font-normal" />
           </div>
-          <img src={appimg} alt="wall" className="md:w-5/12 max-w-full" />
+          <img src={serviceThree} alt="wall" className="md:w-5/12 max-w-full" />
         </div>
         {/* Item four */}
         <div className="flex mt-8 p-8 justify-around items-center  md:flex-row flex-col">
@@ -76,7 +80,7 @@ const OurServices = () => {
             </p>
             <BsArrowRight className="mt-8 text-5xl font-normal" />
           </div>
-          <img src={appimg} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
+          <img src={serviceFour} alt="wall" className="md:w-5/12 max-w-full md:order-1" />
         </div>
       </div>
     </div>

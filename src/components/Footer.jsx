@@ -1,9 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Fragment, useRef, useState } from "react"
-import { Dialog, Transition } from "@headlessui/react"
-import { ExclamationIcon } from "@heroicons/react/outline"
 import { FaTimes } from "react-icons/fa"
+import youtube from '../assets/images/youtube.png'
 
 const Footer = () => {
   const [showModal, setShowModal] = React.useState(false)
@@ -166,14 +164,14 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between md:my-8">
+        <div className="flex justify-between md:my-8 mt-8">
           <img
             className="h-32 w-48"
             src="https://cloudstok.com/img/white-logo.png"
             alt="Workflow"
           />
           <div className="flex flex-col items-end">
-            <div className="align-left text-xl text-right">
+            <div className="align-left md:text-xl text-right">
               Subsrcribe to get the
               <br />
               latest insights on the cloud
@@ -185,7 +183,7 @@ const Footer = () => {
               Subscribe Now
             </button>
           </div>
-        </div>  
+        </div>
         <div className="my-8 h-0.5 bg-black" />
         <div className="flex justify-between flex-col md:flex-row">
           <div className="pr-16">
@@ -199,25 +197,21 @@ const Footer = () => {
                   alt="facebook"
                 />
               </a>
-              <a className="h-12 w-12 mx-3  cursor-pointer">
-                <img
-                  src={
-                    "https://cdn-icons.flaticon.com/png/512/3670/premium/3670147.png?token=exp=1643017441~hmac=ed1c75f8a9d7eda88005d88f26e09d3d"
-                  }
-                  alt="facebook"
-                />
-              </a>
-              <a className="h-12 w-12 mx-3  cursor-pointer">
+              <a className="h-12 w-12 mr-3  cursor-pointer">
                 <img
                   src={"https://cdn-icons-png.flaticon.com/512/145/145807.png"}
-                  alt="facebook"
+                  alt="LinkedIn"
                 />
-              </a>{" "}
-              <a className="h-12 w-12 ml-3  cursor-pointer">
+              </a>
+              <a className="h-12 w-12 mr-3  cursor-pointer">
                 <img
                   src={"https://static.cdnlogo.com/logos/t/96/twitter-icon.svg"}
-                  alt="facebook"
+                  alt="Twitter"
                 />
+              </a>
+
+              <a className="h-12 w-12 mr-3  cursor-pointer">
+              <img src={youtube} alt="Youtube"/>
               </a>
             </ul>
           </div>

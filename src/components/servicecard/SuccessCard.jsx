@@ -7,7 +7,7 @@ const SuccessCard = (props) => {
   return (
     <>
       <div className="flex my-4 md:m-4 flex-col border border-gray-200 shadow-lg bg-white max-w-screen">
-        <img src={appimg} alt="wall" className="p-2"/>
+        <img src={props?.image} alt="wall" className="p-2"/>
         <div className="p-8">
         <h2 className="font-semibold text-2xl leading-8">
          Cloud Manage Services

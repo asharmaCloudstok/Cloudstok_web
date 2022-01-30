@@ -1,6 +1,7 @@
 import React from "react"
 import { FaTools } from "react-icons/fa"
 import { RiCustomerService2Line } from "react-icons/ri"
+import about from '../assets/images/about.png';
 const AboutUs = () => {
   const userData = [
     { rank: 102, name: "VMs Launched" },
@@ -23,8 +24,8 @@ const AboutUs = () => {
       <div className="flex md:flex-row flex-col md:justify-between">
         <img
           className="h-1/2 max-w-full"
-          width={"500px"}
-          src="https://www.mckinsey.com/~/media/mckinsey/about%20us/social%20responsibility/client%20selection/about-us_client-selection_thumb_2293401013_1536x1536.jpg"
+          width={"490px"}
+          src={about}
           alt="client"
         />
 
@@ -48,12 +49,12 @@ const AboutUs = () => {
             consulting will help you in an easy transition to digital
             infrastructure
           </p>
-          <button className="mt-10 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
+          <button className="mt-8 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
             more about us
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap my-16 justify-between">
+      <div className="flex flex-wrap mt-16 justify-between">
         <div className="text-center p-4  md:px-4">
           <h1 className="text-gradientBlueTwo font-bold text-5xl">102+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
