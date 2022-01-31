@@ -19,7 +19,7 @@ const OurBlogs = () => {
 
   return (
     <div
-      className="pt-8 pb-12 w-full "
+      className=" relative bottom-72  w-full "
       //   style={{ height: "100vh" }}
     >
     <div className="max-w-6xl px-8 md:px-8 mx-auto">

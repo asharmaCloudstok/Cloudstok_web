@@ -53,7 +53,7 @@ const Testimonials = () => {
   }
   return (
     <div
-      className="py-8 bg-[#F4F7FC]"
+      className="py-8 bg-[#F4F7FC] "
       //   style={{ height: "100vh" }}
     >
       <div className="flex md:mt-20 pb-12 items-baseline max-w-6xl px-8 md:px-8 mx-auto">
