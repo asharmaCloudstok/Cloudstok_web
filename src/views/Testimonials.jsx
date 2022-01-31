@@ -1,8 +1,8 @@
-import React, { useState } from "react"
-import Slider from "react-slick"
+import React  from "react"
+
 import "./test.css"
-import { FaArrowRight, FaArrowLeft, FaQuoteLeft } from "react-icons/fa"
-import TestCard from "../components/TestimonialCard/TestCard"
+import { FaQuoteLeft } from "react-icons/fa"
+
 
 const Testimonials = () => {
   // const testdata = [
@@ -103,13 +103,13 @@ const Testimonials = () => {
                 onClick={() => check(2)}
               />
               <label htmlFor="s1" id="slide1">
-                <img className="fea" src="https://picsum.photos/200/200" height="100%" width="100%"/>
+                <img className="fea" src="https://picsum.photos/200/200" height="100%" width="100%" alt=""/>
               </label>
               <label htmlFor="s2" id="slide2">
-                <img className="fea" src="https://picsum.photos/200/300" height="100%" width="100%"/>
+                <img className="fea" src="https://picsum.photos/200/300" height="100%" width="100%" alt="" />
               </label>
               <label htmlFor="s3" id="slide3">
-                <img className="fea" src="https://picsum.photos/300/300" height="100%" width="100%"/>
+                <img className="fea" src="https://picsum.photos/300/300" height="100%" width="100%" alt=""/>
               </label>
             </section>
           </div>

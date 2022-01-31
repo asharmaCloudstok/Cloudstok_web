@@ -72,17 +72,14 @@ const Milestones = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
           
         </div>
-        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" id="respons">
-          {/* <div className="mile-border"></div> */}
-         
-         
+        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" >
 <VerticalTimeline>
   {
     data.map((e,i)=>{
       return(
         <>
         <VerticalTimelineElement
-    className="vertical-timeline-element--work"
+    className="vertical-timeline-element--work response"
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     date="2011 - present"

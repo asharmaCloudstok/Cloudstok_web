@@ -482,15 +482,15 @@
    top: 500px;
    left: 470px;
 }
-#respons{
+.respons{
    display: none;
 }
 /* responsive milatone */
 @media screen and (max-width:480px) {
-    #respons{
-        display: block;
+    .respons{
+        display: none;
     }
-    .head{
+    /* .head{
         position: relative;
         left: 100px;
         width: 300px;
@@ -521,7 +521,7 @@
         width: 60px;
         border-top: 2px solid blue;
         height: 10px;
-    }
+    } */
 #milecontent{
     display: none;
 }
@@ -540,41 +540,10 @@
 
 }
 @media screen and (max-width:768px) {
-    #respons{
-        display: block;
+    .respons{
+        display: none;
     }
-    .head{
-        position: relative;
-        left: 100px;
-        width: 300px;
-    }
-  
-    #span-content{
-        position: relative;
-        z-index: 2;
-    }
-    #span-content::after{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 20px;
-        top: 10px;
-        width: 3px;
-        border-right: 2px solid blue;
-        height: 90px;
-    }
-    #span-content::before{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 22px;
-        top: 75px;
-        width: 60px;
-        border-top: 2px solid blue;
-        height: 10px;
-    }
+    
     #milecontent{
         display: none;
     }
@@ -593,41 +562,10 @@
         
     }
     @media screen and (max-width:1024px) {
-        #respons{
-            display: block;
-        }
-        .head{
-            position: relative;
-            left: 100px;
-            width: 300px;
+        .respons{
+            display: none;
         }
       
-        #span-content{
-            position: relative;
-            z-index: 2;
-        }
-        #span-content::after{
-            content: "";
-            display: block;
-            position: relative;
-            z-index: 1;
-            left: 20px;
-            top: 10px;
-            width: 3px;
-            border-right: 2px solid blue;
-            height: 90px;
-        }
-        #span-content::before{
-            content: "";
-            display: block;
-            position: relative;
-            z-index: 1;
-            left: 22px;
-            top: 75px;
-            width: 60px;
-            border-top: 2px solid blue;
-            height: 10px;
-        }
         #milecontent{
             display: none;
         }
