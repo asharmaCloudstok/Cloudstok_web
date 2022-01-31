@@ -4,22 +4,60 @@ import d from '../assets/images/cloud2.png';
 import e from '../assets/images/cloud3.png';
 import f from '../assets/images/cloud4.png';
 import "./style.css"
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Milestones = () => {
-  // let arr = [
-  //   "We Started",
-  //   "First 10 Customers",
-  //   "First 100 vm`s Launched",
-  //   "First Enterprise Client",
-  //   "AWS Select Tier Partner",
-  //   "500+ VMs Managed and Growing",
-  //   "Delivered First Application",
-  //   "Scaled upto 20 people Company",
-  //   "On boarded multiple funded fin-tech start-ups",
-  //   "Implemented DevOps as a service in more than 5 funded start-ups",
-  //   "Delivered a CRM Application to an Enterprise",
-  //   "Delivered a financial application along with a funded fintech startup",
-  // ]
+  const data=[
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+    {
+      head:"We Started",
+      para:"Creative Direction, User Experience, Visual Design, Project Management, Team Leading"
+    },
+  ]
 
   return (
     <div className=" bg-white">
@@ -34,12 +72,60 @@ const Milestones = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
           
         </div>
+        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" id="respons">
+          {/* <div className="mile-border"></div> */}
+         
+         
+<VerticalTimeline>
+  {
+    data.map((e,i)=>{
+      return(
+        <>
+        <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="2011 - present"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    // icon={<WorkIcon />}
+    key={i}
+  >
+    <h3 className="vertical-timeline-element-title">
+      {e.head}
+    </h3>
+    
+    <p>
+      {e.para}
+    </p>
+  </VerticalTimelineElement>
+        </>
+      )
+    })
+  }
+  
+  
+</VerticalTimeline>
+
+
+        {/* {arr.map((el, index) => (
+          <>
+            <div className="grid grid-cols-1">
+            <span className="w-12 h-12 bg-gradient-to-r to-cyan-500  from-blue-500 font-medium text-xl justify-center items-center rounded-full text-white my-4" id="span-content">
+             <p className="ml-4"> {index+1} </p>
+            </span>
+            <span className="head">{el}</span>
+            </div>
+          </>
+        ))} */}
+        </div>
+  
+
           <img src={c} alt="" className="cloud-img" />
           <img src={d} alt="" className="cloud1-img" />
           <img src={e} alt="" className="cloud2-img" />
           <img src={f} alt="" className="cloud3-img" />
       </div>
-      <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full relative -top-60 ">
+      <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full relative -top-60 " id="milecontent">
         
         <div className="bg-gradient-to-r to-cyan-500  from-blue-500 rounded-full  items-center w-14 h-14" id="mile11">
           <p className="m-5  justify-items-center eleven"> 11 </p>
@@ -65,14 +151,7 @@ const Milestones = () => {
         </div>
         
         
-        {/* {arr.map((el, index) => (
-          <>
-            <span className="w-12 h-12 bg-red-500 font-medium text-xl inline-flex justify-center items-center rounded-full text-white my-4">
-              {index + 1}
-            </span>
-            <span className="">{el}</span>
-          </>
-        ))} */}
+        
       
         <div className="bg-gradient-to-r to-cyan-500 relative top-14 from-blue-500 rounded-full  items-center w-14 h-14">
           <p className="one  justify-items-center"> 01 </p>
