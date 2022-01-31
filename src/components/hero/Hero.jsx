@@ -1,6 +1,5 @@
 import React from "react"
 import herobg from "../../assets/images/a.png"
-import "../hero/hero.css"
 
 const Hero = () => {
   const divStyle = { height: "calc(100vh - 80px)" }

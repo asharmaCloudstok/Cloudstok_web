@@ -10,8 +10,6 @@ import Milestones from "../views/Milestones";
 import OurBlogs from "../views/OurBlogs";
 import Testimonials from "../views/Testimonials";
 
-
-
 export default function Home() {
   
   return <>

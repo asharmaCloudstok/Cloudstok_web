@@ -3,7 +3,7 @@ import React from "react"
 const TestCard = () => {
   return (
     <>
-      <div className="py-12 w-6/12 relative skew-16d">
+      <div className="mx-4 w-96">
         <div className="bg-blue-500 border w-16 h-16 rounded-full text-center absolute top-3 left-60">
           <p className="text-7xl mt-2 text-white"> “ </p>
         </div>
