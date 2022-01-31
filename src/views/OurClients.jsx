@@ -44,6 +44,14 @@ const OurClients = () => {
           />
         ))}
       </Marquee>
+      <Marquee gradient={false} className="h-80">
+        {clientData.map(el => (
+          <ClientsIcon
+            className={align[Math.floor(Math.random() * 3)]}
+            src={el}
+          />
+        ))}
+      </Marquee>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import SuccessCard from "../../components/servicecard/SuccessCard"
 import CloudOne from "../../assets/images/cloudOne.png"
 import CloudThree from "../../assets/images/CloudThree.png"
 import CloudTwo from "../../assets/images/cloudTwo.png"
+import Loading from "../../components/loading/Loading"
 
 const AppTesting = () => {
   const data = [
@@ -44,8 +45,8 @@ const AppTesting = () => {
             route2={"Application Testing and Consulting"}
           />
         </div>
+        <Loading/>
       </div>
-      ``
       <div className="max-w-6xl px-8 md:px-8 mx-auto">
         <div className="flex md:mt-20 mt-12 pb-12 items-baseline max-w-6xl px-8 md:px-8 mx-auto">
           <h2 className="text-black-900 font-semibold md:text-5xl text-3xl">

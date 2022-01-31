@@ -7,6 +7,7 @@ import SuccessCard from "../../components/servicecard/SuccessCard"
 import CloudOne from "../../assets/images/cloudOne.png"
 import CloudThree from "../../assets/images/CloudThree.png"
 import CloudTwo from "../../assets/images/cloudTwo.png"
+import Loading from "../../components/loading/Loading"
 
 const Cloud = () => {
   const data = [
@@ -38,6 +39,7 @@ const Cloud = () => {
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb route1={"Services"} route2={"Cloud Managed Services"} />
         </div>
+        <Loading/>
       </div>
 
       <div className="max-w-6xl px-8 md:px-8 mx-auto">

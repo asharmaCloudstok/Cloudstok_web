@@ -84,8 +84,8 @@ const Applications = () => {
       <div className="bg-bgBlue">
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb
-            route1={"Services"}
-            route2={"Application Development and Modernization"}
+            route1={"services"}
+            route2= {"Application Development and Modernization"}
           />
           <h2 className="text-3xl font-semibold mt-10">
             Application Development and Moderization

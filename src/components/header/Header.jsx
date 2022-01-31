@@ -36,7 +36,7 @@ function Nav({ location }) {
                 </Link>
 
                 <Link
-                  to="/workinprogress"
+                  to="/whoweare"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                 >
@@ -141,7 +141,7 @@ function Nav({ location }) {
                 {/* </Link> */}
 
                 <Link
-                  to="/workinprogress"
+                  to="/blogs"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                 >
@@ -149,7 +149,7 @@ function Nav({ location }) {
                 </Link>
 
                 <Link
-                  to="/workinprogress"
+                  to="/career"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
                 >
@@ -237,7 +237,7 @@ function Nav({ location }) {
                 </Link>
 
                 <Link
-                  to="/workinprogress"
+                  to="/whoweare"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                 >
@@ -338,14 +338,14 @@ function Nav({ location }) {
                 </Menu>
 
                 <Link
-                  to="/workinprogress"
+                  to="/blogs"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                 >
                   Blogs and Case Studies
                 </Link>
                 <Link
-                  to="/workinpgrogress"
+                  to="/career"
                   activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
                   className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base"
                 >
