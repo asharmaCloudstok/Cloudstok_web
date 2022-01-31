@@ -10,8 +10,22 @@ import b from "../../assets/images/dat2.png"
 import d from "../../assets/images/dat4.png"
 import e from "../../assets/images/dat5.png"
 import f from "../../assets/images/dat6.png"
-import t from "../../assets/images/node.png"
-import r from "../../assets/images/react1.png"
+import node from "../../assets/images/node.jpg"
+import react from "../../assets/images/react.jpg"
+import android from "../../assets/images/android.jpg"
+import angular from "../../assets/images/angular.jpg"
+import aurora from "../../assets/images/aurora.jpg"
+import awsDynamo from "../../assets/images/awsDynamo.jpg"
+import ios from "../../assets/images/ios.jpg"
+import java from "../../assets/images/java.jpg"
+import mongoDb from "../../assets/images/mongoDb.jpg"
+import mysql from "../../assets/images/mysql.jpg"
+import sqlserver from "../../assets/images/sqlserver.jpg"
+import php from "../../assets/images/php.jpg"
+import redshift from "../../assets/images/redshift.jpg"
+import CloudOne from "../../assets/images/cloudOne.png"
+import CloudThree from "../../assets/images/CloudThree.png"
+import CloudTwo from "../../assets/images/cloudTwo.png"
 
 const Applications = () => {
   const data = [
@@ -46,18 +60,19 @@ const Applications = () => {
     { appimg: f },
   ]
   const techdata = [
-    { techimg: t },
-    { techimg: r },
-    { techimg: t },
-    { techimg: r },
-    { techimg: t },
-    { techimg: r },
-    { techimg: t },
-    { techimg: r },
-    { techimg: t },
-    { techimg: r },
-    { techimg: t },
-    { techimg: r },
+    { techimg: node },
+    { techimg: react },
+    { techimg: angular },
+    { techimg: php },
+    { techimg: java },
+    { techimg: android },
+    { techimg: ios },
+    { techimg: mongoDb },
+    { techimg: awsDynamo },
+    { techimg: aurora },
+    { techimg: redshift },
+    { techimg: mysql },
+    { techimg: sqlserver },
   ]
 
   return (
@@ -66,11 +81,11 @@ const Applications = () => {
         name={"Services"}
         servicename={"Application Development and Modernization"}
       />
-      <div className="bg-blue-100">
+      <div className="bg-bgBlue">
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb
             route1={"Services"}
-            route2={"Application Testing and Consulting"}
+            route2={"Application Development and Modernization"}
           />
           <h2 className="text-3xl font-semibold mt-10">
             Application Development and Moderization
@@ -132,9 +147,9 @@ const Applications = () => {
             <div className="w-16 h-1 ml-2 bg-blue-500"></div>
           </div>
           <div className="flex justify-between md:flex-row flex-col">
-            <SuccessCard />
-            <SuccessCard />
-            <SuccessCard />
+            <SuccessCard image={CloudOne} />
+            <SuccessCard image={CloudTwo} />
+            <SuccessCard image={CloudThree} />
           </div>
           <div className="flex justify-center">
             <button
