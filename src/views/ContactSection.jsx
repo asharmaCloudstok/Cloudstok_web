@@ -1,6 +1,7 @@
 import React from "react"
 import userImage from "../assets/images/contactOne.png"
 import { FaMapMarkerAlt, FaPhoneVolume, FaEnvelope } from "react-icons/fa"
+import {ImLocation} from 'react-icons/im'
 const ContactSection = () => {
   const url =
     "https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/how-to-manage-a-client-relationship-when-your-personalities-are-different-open-graph.jpg"
@@ -27,7 +28,7 @@ const ContactSection = () => {
               <div className="rounded-full w-16 h-16 flex items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-9 w-9 mx-auto text-cyan-500 to blue-500"
+                  class="h-9 w-9 mx-auto text-blue-500 text-cyan-500"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -46,7 +47,7 @@ const ContactSection = () => {
                   />
                 </svg>
               </div>
-              <p className="ml-4">
+              <p className="">
                 The Corenthum, Tower B, <br />
                 Noida Sec-62, 201301
               </p>

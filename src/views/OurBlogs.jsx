@@ -29,7 +29,7 @@ const OurBlogs = () => {
       //   style={{ height: "100vh" }}
     >
       <div className="max-w-6xl px-8 md:px-8 mx-auto">
-        <div className="flex md:mt-20 pb-12 items-baseline max-w-6xl px-8 md:px-8 mx-auto">
+        <div className="flex md:mt-20 pb-12 items-baseline max-w-6xl px-8 md:px-0 mx-auto">
           <h2 className="text-black-900 font-semibold md:text-5xl text-3xl">
             Our Blogs
           </h2>
