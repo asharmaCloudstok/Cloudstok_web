@@ -8,6 +8,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 
 const Milestones = () => {
+  
   const data=[
     {
       head:"We Started",
@@ -62,7 +63,7 @@ const Milestones = () => {
   return (
     <div className=" bg-white">
       <div
-        className="max-w-6xl px-8 md:px-8 mx-auto pb-12"
+        className="max-w-6xl px-8 md:px-8 mx-auto"
         //   style={{ height: "100vh" }}
       >
         <div className="flex items-baseline">
@@ -72,14 +73,14 @@ const Milestones = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
           
         </div>
-        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" >
+        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" id="respons">
 <VerticalTimeline>
   {
     data.map((e,i)=>{
       return(
         <>
         <VerticalTimelineElement
-    className="vertical-timeline-element--work response"
+    className="vertical-timeline-element--work "
     contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
     date="2011 - present"
@@ -182,6 +183,7 @@ const Milestones = () => {
           <p className="m-5  justify-items-center ten"> 10 </p>
           <p className="ten-para"> Implemented DevOps as a service in more than 5 funded start-ups  </p>
         </div>
+       
       </div>
     
     </div>
