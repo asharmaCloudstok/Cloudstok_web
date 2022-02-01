@@ -7,6 +7,7 @@
     background: red ;
 } */
 
+
 #mile{
     border-top: 2px solid blue;
     border-right: 2px solid blue;
@@ -308,7 +309,7 @@
     border-left: 2px solid blue;
     border-bottom-left-radius: 40px;
     position: relative;
-    bottom: 247px;
+    bottom: 273px;
 
     right: 142px;
 }
@@ -428,14 +429,14 @@
 }
 .eight-para{
     position: relative;
-    bottom: 555px;
-    right: 10px;
+    bottom: 360px;
+    right: 0px;
 }
 .nine-para{
     position: relative;
     bottom: 90px;
-    right: -62px;
-    width: 150px;
+    right: 112px;
+    width: 120px;
 }
 .ten-para{
     position: relative;
@@ -445,15 +446,15 @@
 }
 .eleven-para{
     position: relative;
-    bottom: 136px;
-    right: -60px;
+    bottom: 126px;
+    right: 140px;
     width: 150px;
 }
 .twelve-para{
     position: relative;
     bottom: 180px;
-    right: 130px;
-    width: 300px;
+    right: 110px;
+    width: 250px;
 }
 
 /* cloud images styling */
@@ -467,19 +468,19 @@
     /* width: 100px;
     height: 80px; */
     position: relative;
-    top:360px;
+    top:260px;
     left: 740px;
 }
 .cloud2-img{
     /* width: 100px;
     height: 80px; */
     position: relative;
-    top:0px;
+    top:-40px;
     left: 1000px;
 }
 .cloud3-img{
    position: relative;
-   top: 500px;
+   top: 400px;
    left: 470px;
 }
 #respons{
@@ -490,7 +491,7 @@
     #respons{
         display: block;
     }
-    .head{
+    /* .head{
         position: relative;
         left: 100px;
         width: 300px;
@@ -521,7 +522,7 @@
         width: 60px;
         border-top: 2px solid blue;
         height: 10px;
-    }
+    } */
 #milecontent{
     display: none;
 }
@@ -541,40 +542,9 @@
 }
 @media screen and (max-width:768px) {
     #respons{
-        display: block;
+        display: none;
     }
-    .head{
-        position: relative;
-        left: 100px;
-        width: 300px;
-    }
-  
-    #span-content{
-        position: relative;
-        z-index: 2;
-    }
-    #span-content::after{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 20px;
-        top: 10px;
-        width: 3px;
-        border-right: 2px solid blue;
-        height: 90px;
-    }
-    #span-content::before{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 22px;
-        top: 75px;
-        width: 60px;
-        border-top: 2px solid blue;
-        height: 10px;
-    }
+    
     #milecontent{
         display: none;
     }
@@ -594,40 +564,9 @@
     }
     @media screen and (max-width:1024px) {
         #respons{
-            display: block;
-        }
-        .head{
-            position: relative;
-            left: 100px;
-            width: 300px;
+            display: none;
         }
       
-        #span-content{
-            position: relative;
-            z-index: 2;
-        }
-        #span-content::after{
-            content: "";
-            display: block;
-            position: relative;
-            z-index: 1;
-            left: 20px;
-            top: 10px;
-            width: 3px;
-            border-right: 2px solid blue;
-            height: 90px;
-        }
-        #span-content::before{
-            content: "";
-            display: block;
-            position: relative;
-            z-index: 1;
-            left: 22px;
-            top: 75px;
-            width: 60px;
-            border-top: 2px solid blue;
-            height: 10px;
-        }
         #milecontent{
             display: none;
         }
@@ -647,40 +586,9 @@
         }
         @media screen and (max-width:768px) {
                 #respons{
-        display: block;
-    }
-    .head{
-        position: relative;
-        left: 100px;
-        width: 300px;
+        display:block;
     }
   
-    #span-content{
-        position: relative;
-        z-index: 2;
-    }
-    #span-content::after{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 20px;
-        top: 10px;
-        width: 3px;
-        border-right: 2px solid blue;
-        height: 90px;
-    }
-    #span-content::before{
-        content: "";
-        display: block;
-        position: relative;
-        z-index: 1;
-        left: 22px;
-        top: 75px;
-        width: 60px;
-        border-top: 2px solid blue;
-        height: 10px;
-    }
             #milecontent{
                 display: none;
             }

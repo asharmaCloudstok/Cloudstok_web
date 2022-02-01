@@ -11,7 +11,12 @@ import {
 import "react-vertical-timeline-component/style.min.css"
 
 const Milestones = () => {
+<<<<<<< HEAD
   const data = [
+=======
+  
+  const data=[
+>>>>>>> d2d744562ead660acc357b0a5ba0774fc70b952b
     {
       head: "We Started",
       para: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
@@ -65,7 +70,7 @@ const Milestones = () => {
   return (
     <div className=" bg-white">
       <div
-        className="max-w-6xl px-8 md:px-8 mx-auto pb-12"
+        className="max-w-6xl px-8 md:px-8 mx-auto"
         //   style={{ height: "100vh" }}
       >
         <div className="flex items-baseline">
@@ -74,11 +79,44 @@ const Milestones = () => {
           </h2>
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
+<<<<<<< HEAD
         <div
           className="max-w-full mx-auto overflow-hidden"
           id="respons"
         >
           {/* <div className="mile-border"></div> */}
+=======
+        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" id="respons">
+<VerticalTimeline>
+  {
+    data.map((e,i)=>{
+      return(
+        <>
+        <VerticalTimelineElement
+    className="vertical-timeline-element--work "
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="2011 - present"
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    // icon={<WorkIcon />}
+    key={i}
+  >
+    <h3 className="vertical-timeline-element-title">
+      {e.head}
+    </h3>
+    
+    <p>
+      {e.para}
+    </p>
+  </VerticalTimelineElement>
+        </>
+      )
+    })
+  }
+  
+  
+</VerticalTimeline>
+>>>>>>> d2d744562ead660acc357b0a5ba0774fc70b952b
 
           <VerticalTimeline>
             {data.map((e, i) => {
@@ -233,6 +271,7 @@ const Milestones = () => {
             Implemented DevOps as a service in more than 5 funded start-ups{" "}
           </p>
         </div>
+       
       </div>
     </div>
   )
