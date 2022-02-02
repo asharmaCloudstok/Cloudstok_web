@@ -1,11 +1,11 @@
-
+/* 
 .numicon::after{
     content: '';
     display: block;
     width: 8px;
     height: 8px;
     background: red ;
-}
+} */
 
 
 #mile{
@@ -584,7 +584,7 @@
         }
             
         }
-        @media screen and (max-width:1280px) {
+        @media screen and (max-width:768px) {
                 #respons{
         display:block;
     }
