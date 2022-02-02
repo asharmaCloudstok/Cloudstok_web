@@ -183,7 +183,7 @@ const Milestones = () => {
           <p className="m-5  justify-items-center ten"> 10 </p>
           <p className="ten-para"> Implemented DevOps as a service in more than 5 funded start-ups  </p>
         </div>
-       
+     
       </div>
     
     </div>
