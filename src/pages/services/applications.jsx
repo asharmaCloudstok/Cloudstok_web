@@ -26,6 +26,7 @@ import redshift from "../../assets/images/redshift.jpg"
 import CloudOne from "../../assets/images/cloudOne.png"
 import CloudThree from "../../assets/images/CloudThree.png"
 import CloudTwo from "../../assets/images/cloudTwo.png"
+import Fade from "react-reveal/Fade"
 
 const Applications = () => {
   const data = [
@@ -85,28 +86,32 @@ const Applications = () => {
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb
             route1={"services"}
-            route2= {"Application Development and Modernization"}
+            route2={"Application Development and Modernization"}
           />
           <h2 className="text-3xl font-semibold mt-10">
             Application Development and Moderization
           </h2>
-          <p className="my-4 text-gray-600 leading-8 text-md">
-            Market are fulfilled with plethora of options. Our Consultant will
-            help you to create, find and manage your application end-to-end. We
-            offer Services of Application Development. Application Monitoring
-            and Management Support for the Application. No ecalations and hassle
-            as Cloudstok's Team will help you throught the process to achieve
-            your business goals.
-          </p>
+          <Fade big>
+            <p className="my-4 text-gray-600 leading-8 text-md">
+              Market are fulfilled with plethora of options. Our Consultant will
+              help you to create, find and manage your application end-to-end.
+              We offer Services of Application Development. Application
+              Monitoring and Management Support for the Application. No
+              ecalations and hassle as Cloudstok's Team will help you throught
+              the process to achieve your business goals.
+            </p>
+          </Fade>
           <h3 className="mt-8 text-2xl font-semibold leading-10">
             Our expertise in development makes sure that you get the product are
             you looking for <br /> by following right type of developement
             methodology
           </h3>
           <div className="grid sm:grid-cols-3 gap-4 place-content-center my-4">
-            {imgdata.map(el => (
-              <img src={el.appimg} alt="" className="w-full" />
-            ))}
+            <Fade big>
+              {imgdata.map(el => (
+                <img src={el.appimg} alt="" className="w-full" />
+              ))}
+            </Fade>
           </div>
           <h3 className="mt-8 text-2xl font-semibold leading-10">
             We support and develop applications using latest technologies along
@@ -114,9 +119,17 @@ const Applications = () => {
             databases in the market.
           </h3>
           <div className="grid md:grid-cols-7 grid-cols-3 gap-4 mt-4 md:mb-8 place-items-center">
-            {techdata.map((e, i) => (
-              <img src={e.techimg} alt="" className="sm:w-full max-w-sm " />
-            ))}
+            {techdata.map((e, i) =>
+              i< 7 ? (
+                <Fade left>
+                  <img src={e.techimg} alt="" className="sm:w-full max-w-sm " />
+                </Fade>
+              ) : (
+                <Fade right>
+                  <img src={e.techimg} alt="" className="sm:w-full max-w-sm " />
+                </Fade>
+              )
+            )}
           </div>
         </div>
       </div>
@@ -128,13 +141,25 @@ const Applications = () => {
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
         <div className="grid sm:grid-cols-2 gap-8 md:mt-12">
-          {data.map(el => (
-            <ServiceCard
-              heading={el.head}
-              paragraph={el.para}
-              route={el.route}
-            ></ServiceCard>
-          ))}
+          {data.map((el, index) =>
+            index === 0 || index === 2 ? (
+              <Fade left>
+                <ServiceCard
+                  heading={el.head}
+                  paragraph={el.para}
+                  route={el.route}
+                ></ServiceCard>
+              </Fade>
+            ) : index === 1 || index === 3 ? (
+              <Fade right>
+                <ServiceCard
+                  heading={el.head}
+                  paragraph={el.para}
+                  route={el.route}
+                ></ServiceCard>
+              </Fade>
+            ) : null
+          )}
         </div>
       </div>
 

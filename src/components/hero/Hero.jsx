@@ -18,8 +18,10 @@ const Hero = () => {
               We offer Services of Application Development. Application
               Monitoring and Management Support for the Application.
             </p>
-            <button className="my-16 bg-gradient-to-r from-gradientBlueOne to-gradientBlueTwo text-white font-medium px-10 py-4 rounded-md uppercase text-sm">
+            <button className="my-16 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm">
+              <div className=" bg-white text-black px-4 py-2 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
               Get Started
+              </div>
             </button>
           </div>
         </Fade>

@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useState } from "react"
 import { FaTools } from "react-icons/fa"
 import { RiCustomerService2Line } from "react-icons/ri"
-import about from '../assets/images/about.png';
+import about from "../assets/images/about.png"
+import Fade from "react-reveal/Fade"
+import Flip from 'react-reveal/Flip';
 const AboutUs = () => {
   const userData = [
     { rank: 102, name: "VMs Launched" },
@@ -11,7 +13,7 @@ const AboutUs = () => {
     { name: "Develops as a service" },
     { name: "24*7 Next Gen Managed Support" },
   ]
-
+  const [show, isShow] = useState(false);
   return (
     <div className="max-w-6xl px-8 md:px-8 mx-auto py-12">
       <div className="flex items-baseline">
@@ -22,13 +24,15 @@ const AboutUs = () => {
       </div>
 
       <div className="flex md:flex-row flex-col md:justify-between">
-        <img
-          className="h-1/2 max-w-full"
-          width={"490px"}
-          src={about}
-          alt="client"
-        />
-
+        <Fade left>
+          <img
+            className="h-1/2 max-w-full"
+            width={"490px"}
+            src={about}
+            alt="client"
+          />
+        </Fade>
+        <Fade right>
         <div className="md:pl-12">
           <h4 className="text-ctaBlue text-2xl md:my-0 mt-8">
             Accelerate your journey to digitalization
@@ -53,8 +57,11 @@ const AboutUs = () => {
             more about us
           </button>
         </div>
+      </Fade>
       </div>
+    
       <div className="flex flex-wrap mt-16 justify-between">
+      <Flip left>
         <div className="text-center p-4  md:px-4">
           <h1 className="text-gradientBlueTwo font-bold text-5xl">102+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -62,6 +69,8 @@ const AboutUs = () => {
             Launched
           </p>
         </div>
+        </Flip>
+        <Flip left>
         <div className="text-center p-4 md:px-4">
           <h1 className="text-gradientBlueOne font-bold text-5xl">352+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -69,6 +78,8 @@ const AboutUs = () => {
             Skill Sets
           </p>
         </div>
+        </Flip>
+        <Flip left>
         <div className="text-center p-4 md:px-4">
           <h1 className="text-gradientBlueTwo font-bold text-5xl">12+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -77,6 +88,8 @@ const AboutUs = () => {
             Served
           </p>
         </div>
+        </Flip>
+        <Flip right>
         <div className="text-center p-4 md:px-4">
           <h1 className="text-gradientBlueOne font-bold text-5xl">6+</h1>
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -84,6 +97,8 @@ const AboutUs = () => {
             Delivered
           </p>
         </div>
+        </Flip>
+        <Flip right>
         <div className="text-center p-4 md:px-4 flex flex-col items-center">
           <FaTools className="text-5xl text-gradientBlueTwo" />
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -91,6 +106,8 @@ const AboutUs = () => {
             Launched
           </p>
         </div>
+        </Flip>
+        <Flip right>
         <div className="text-center p-4 md:px-4 flex flex-col items-center">
           <RiCustomerService2Line className="text-gradientBlueOne font-bold text-5xl" />
           <p className="text-center mt-4 leading-8 text-xl ">
@@ -98,6 +115,7 @@ const AboutUs = () => {
             Launched
           </p>
         </div>
+        </Flip>
       </div>
     </div>
   )

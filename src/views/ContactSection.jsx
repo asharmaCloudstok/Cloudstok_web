@@ -26,7 +26,7 @@ const ContactSection = () => {
                 <div className="rounded-full w-16 h-16 flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-16 w-16 mx-auto text-cyan-500 to blue-500 border border-2 rounded-full border-gradientBlueOne p-2"
+                    class="h-16 w-16 mx-auto text-cyan-500 to blue-500 border-2 rounded-full border-gradientBlueOne p-2"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -98,7 +98,7 @@ const ContactSection = () => {
               </div>
 
               <div className="flex h-12 items-center px-2 border my-4 rounded border-gray-200 bg-gray-100">
-                <HiPhone className="h-9 w-9 text-gray-400 py-2" />
+                <HiPhone className="h-10 w-10 text-gray-400 py-2" />
                 <input
                   className="bg-transparent p-2 w-full focus:outline-none"
                   type="text"

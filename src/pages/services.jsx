@@ -8,6 +8,7 @@ import SuccessCard from "../components/servicecard/SuccessCard"
 import CloudOne from "../assets/images/cloudOne.png"
 import CloudThree from "../assets/images/CloudThree.png"
 import CloudTwo from "../assets/images/cloudTwo.png"
+import Fade from "react-reveal/Fade"
 
 const Services = () => {
   const data = [
@@ -42,12 +43,14 @@ const Services = () => {
           <div className="max-w-6xl px-8 md:px-8 mx-auto">
             <Breadcrumb route1={"Services"} />
             <div className="grid sm:grid-cols-2 gap-8 md:mt-12">
-              {data.map(el => (
-                <ServiceCard
-                  heading={el.head}
-                  paragraph={el.para}
-                  route={el.route}
-                ></ServiceCard>
+              {data.map((el, index)=> (
+                  <ServiceCard
+                    index={index}
+                    heading={el.head}
+                    paragraph={el.para}
+                    route={el.route}
+                  ></ServiceCard>
+        
               ))}
             </div>
           </div>
