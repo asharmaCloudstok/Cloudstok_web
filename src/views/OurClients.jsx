@@ -38,7 +38,7 @@ const OurClients = () => {
         </h2>
         <div className="w-16 h-1 ml-2 bg-blue-500"></div>
       </div>
-      <Marquee gradient={false} className="h-60">
+      <Marquee gradient={false} className="overflow-hidden">
         <div className="grid grid-rows-1 grid-cols-9">
           {clientData.map((el, index) => (
             <ClientsIcon
@@ -53,8 +53,8 @@ const OurClients = () => {
           ))}
         </div>
       </Marquee>
-      <Marquee gradient={false} className="h-60">
-        <div className="grid grid-rows-1 grid-cols-9">
+      <Marquee gradient={false} className="overflow-hidden">
+        <div className="grid grid-rows-1 grid-cols-9 h-60">
           {clientDataRowTwo.map((el, index) => (
             <ClientsIcon
               container={index % 2 !== 0 && " self-end"}
