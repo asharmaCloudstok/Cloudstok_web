@@ -1,6 +1,7 @@
 import React from "react"
 import Marquee from "react-fast-marquee"
 import ClientsIcon from "../components/clientsIcon/ClientsIcon"
+import Fade from 'react-reveal/Fade'
 
 const OurClients = () => {
   let clientData = [
@@ -38,6 +39,7 @@ const OurClients = () => {
         </h2>
         <div className="w-16 h-1 ml-2 bg-blue-500"></div>
       </div>
+      <Fade>
       <Marquee gradient={false} className="overflow-hidden">
         <div className="grid grid-rows-1 grid-cols-9">
           {clientData.map((el, index) => (
@@ -69,6 +71,7 @@ const OurClients = () => {
           ))}
         </div>
       </Marquee>
+      </Fade>
     </div>
   )
 }
