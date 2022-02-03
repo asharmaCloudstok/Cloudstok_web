@@ -1,46 +1,55 @@
-import React  from "react"
-
+import React,{useState}  from "react"
+import {Slider} from 'react-slick';
 import "./test.css"
 import { FaQuoteLeft } from "react-icons/fa"
 
 
 const Testimonials = () => {
-  const testdata = [
-    {
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-      title: "Yug - SG Corp",
-    },
-    {
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-      title: "Yug - SG Corp",
-    },
-    {
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
-      title: "Yug - SG Corp",
-    },
-  ]
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
-  const [testIndex, setTestIndex] = useState(0)
-  const settings = {
-    dots: true,
-    centerMode:true,
-    infinite: true,
-    lazyload: true,
-    speed: 3000,
-    slideToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    beforeChange: (current, next) => setTestIndex(next),
+  const checkNext = () => {
+    const labels = document.querySelectorAll('#slider label');
+    const nextIndex = selectedIndex === (labels.length - 1) ? 0 : selectedIndex + 1; 
+    setSelectedIndex(nextIndex);
   }
+
+  const check = index => setSelectedIndex(index);
+  // const testdata = [
+  //   {
+  //     para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
+  //     title: "Yug - SG Corp",
+  //   },
+  //   {
+  //     para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
+  //     title: "Yug - SG Corp",
+  //   },
+  //   {
+  //     para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ratione et, consequuntur deleniti perspiciatis vel distinctio temporibus",
+  //     title: "Yug - SG Corp",
+  //   },
+  // ]
+
+  // const [testIndex, setTestIndex] = useState(0)
+  // const settings = {
+  //   dots: true,
+  //   centerMode:true,
+  //   infinite: true,
+  //   lazyload: true,
+  //   speed: 3000,
+  //   slideToShow: 3,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   beforeChange: (current, next) => setTestIndex(next),
+  // }
   return (
-    <div className="pt-8 py-24 bg-bgBlue">
+    <div className="pt-8 py-24 bg-bgBlue overflow-hidden">
       <div className="flex md:mt-20 pb-12 h-1/2 items-baseline max-w-6xl px-8 md:px-8 mx-auto">
         <h2 className="text-black-900 font-semibold md:text-5xl text-3xl">
           Testimonials
         </h2>
         <div className="w-16 h-1 ml-2 bg-blue-500"></div>
       </div>
-      <div className="max-w-6xl px-8 md:px-8 mx-auto">
+      {/* <div className="max-w-6xl px-8 md:px-8 mx-auto">
         <Slider {...settings} style={{ marginTop: "35px", maxWidth: "1152px" }}>
           {testdata.map((ele, i) => {
             return (
@@ -59,12 +68,9 @@ const Testimonials = () => {
               </>
             )
           })}
-<<<<<<< HEAD
-        </Slider>
-=======
-        </Slider> */}
-         <div>
-        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+        </Slider> 
+         <div> */}
+        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 overflow-hidden">
           <div className="md:w-1/4 py-64 md:mb-0 mb-6 flex flex-col text-center items-center">
             <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0">
               <button onClick={checkNext}>{'<'}</button>
@@ -108,15 +114,14 @@ const Testimonials = () => {
             </section>
           </div>
           <div className="md:w-1/4 py-64 md:mb-0 mb-6 flex flex-col text-center items-center">
-            <div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0">
+            <div className="w-20 h-20 inline-flex items-center mr-0 justify-center rounded-full bg-orange-100 text-orange-500 mb-5 flex-shrink-0">
               <button onClick={checkNext}>{'>'}</button>
             </div>
           </div>
         </div>
-      </div>
->>>>>>> d2d744562ead660acc357b0a5ba0774fc70b952b
-      </div>
-    </div>
+       </div>
+    
+    
   )
 }
 export default Testimonials

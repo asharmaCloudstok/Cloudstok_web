@@ -11,12 +11,8 @@ import {
 import "react-vertical-timeline-component/style.min.css"
 
 const Milestones = () => {
-<<<<<<< HEAD
-  const data = [
-=======
   
   const data=[
->>>>>>> d2d744562ead660acc357b0a5ba0774fc70b952b
     {
       head: "We Started",
       para: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
@@ -79,14 +75,7 @@ const Milestones = () => {
           </h2>
           <div className="w-16 h-1 ml-2 bg-blue-500"></div>
         </div>
-<<<<<<< HEAD
-        <div
-          className="max-w-full mx-auto overflow-hidden"
-          id="respons"
-        >
-          {/* <div className="mile-border"></div> */}
-=======
-        <div className="flex flex-col max-w-full mx-auto overflow-hidden pl-2 h-full" id="respons">
+        <div className="flex flex-col max-w-full mx-auto pl-2 h-full" id="respons">
 <VerticalTimeline>
   {
     data.map((e,i)=>{
@@ -116,7 +105,6 @@ const Milestones = () => {
   
   
 </VerticalTimeline>
->>>>>>> d2d744562ead660acc357b0a5ba0774fc70b952b
 
           <VerticalTimeline>
             {data.map((e, i) => {
