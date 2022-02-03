@@ -540,7 +540,7 @@
 }
 
 }
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     #respons{
         display: none;
     }
@@ -559,12 +559,12 @@
     }
     .cloud3-img{
        display: none;
-    }
+    } */
         
-    }
+    
     @media screen and (max-width:1024px) {
         #respons{
-            display: none;
+            display: block;
         }
       
         #milecontent{
@@ -605,4 +605,12 @@
                display: none;
             }
                 
+            }
+            @media screen and (min-width:1980px) {
+                #milecontent{
+                    display: block;
+                    width: 100%;
+                    max-width: 100%;
+                    padding-left: 250px;
+                }
             }

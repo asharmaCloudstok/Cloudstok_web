@@ -20,3 +20,8 @@
 }
 
 
+.location{
+    background:linear-gradient(left top, left bottom, from(#f00), to(#333));
+	background-clip: text;
+	text-fill-color: transparent;
+}
