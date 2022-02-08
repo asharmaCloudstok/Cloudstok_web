@@ -18,7 +18,7 @@
     "@heroicons/react": "^1.0.5",
     "@react-native-community/masked-view": "^0.1.11",
     "framer-motion": "^6.2.3",
-    "gatsby": "^4.5.1",
+    "gatsby": "^4.6.2",
     "gatsby-cli": "^4.5.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-nprogress": "^4.6.0",
