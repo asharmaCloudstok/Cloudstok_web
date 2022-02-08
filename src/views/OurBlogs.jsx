@@ -40,13 +40,14 @@ const OurBlogs = () => {
           <SuccessCard image={CloudTwo} />
           <SuccessCard image={CloudThree} />
         </div>
-        <div className="flex justify-center">
-          <button
-            // onClick={() => setShowModal(true)}
-            className="mt-12 bg-gradient-to-r to-gradientBlueOne from-gradientBlueTwo text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
-          >
-            More Blogs
-          </button>
+        <div className="flex mt-4 justify-center">
+            <button
+              className="my-4 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
+            >
+              <div className=" bg-white text-black px-8 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
+                More Blogs
+              </div>
+            </button>
         </div>
       </div>
     </div>

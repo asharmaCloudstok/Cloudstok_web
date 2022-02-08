@@ -2,18 +2,23 @@ import React from "react"
 import Breadcrumb from "../components/Breadcrumb"
 import Layout from "../components/Layout"
 import { FaList, FaRegEnvelope, FaUser } from "react-icons/fa"
-import { HiPhone } from "react-icons/hi"
+import {AiOutlineUser} from 'react-icons/ai'
+import {BsTelephone} from 'react-icons/bs'
 import Fade from "react-reveal/Fade"
 import Pagename from "../components/pagename/Pagename"
+import location from '../assets/images/location.png'
+import mail from '../assets/images/mail.png'
+import phone from '../assets/images/phone.png'
 
 const contact = () => {
+  
   return (
     <Layout>
       <Pagename name={"Contact Us"} />
 
       <div className="md:max-w-6xl px-6 md:px-8 mx-auto pb-16">
         <Fade left>
-          <Breadcrumb />
+          <Breadcrumb route1={'Contact'} />
         </Fade>
         <div className="md:relative flex flex-col">
           <Fade right>
@@ -24,8 +29,7 @@ const contact = () => {
                 eiusmod tempor incidunt ut labore
               </h2>
               <div className="flex h-12 items-center px-2 border mt-12 rounded-lg border-gray-200 bg-gray-100">
-                <FaUser className="py-2 h-9 w-9 text-gray-400" />
-
+              <AiOutlineUser className="py-2 h-9 w-9 text-gray-400" />
                 <input
                   className="w-full p-2 bg-transparent text-sm"
                   type="text"
@@ -35,7 +39,7 @@ const contact = () => {
               </div>
 
               <div className="flex px-2 border mt-6 rounded-lg border-gray-200 bg-gray-100">
-                <HiPhone className="h-10 w-10 text-gray-400 py-2" />
+              <BsTelephone className="h-9 w-9 text-gray-400 py-2" />
                 <input
                   className="bg-transparent w-full text-sm p-2"
                   type="text"
@@ -46,7 +50,7 @@ const contact = () => {
               <div className="flex h-12 items-center px-2 border mt-4 rounded-lg border-gray-200 bg-gray-100">
                 <FaRegEnvelope className="h-9 w-9 text-gray-400 py-2" />
                 <input
-                  class="bg-transparent w-full text-sm p-2"
+                  className="bg-transparent w-full text-sm p-2"
                   type="text"
                   placeholder="Username"
                   name="usrnm"
@@ -96,26 +100,7 @@ const contact = () => {
               <Fade left>
                 <div className="flex items-center mb-8">
                   <div className="rounded-full w-16 h-16 flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-16 w-16 mx-auto text-cyan-500 to blue-500 border-2 rounded-full border-gradientBlueOne p-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
+                  <img src={location} alt=""/>
                   </div>
                   <div className="">
                     <p className="ml-8 text-gray-500">
@@ -126,35 +111,13 @@ const contact = () => {
                 </div>
                 <div className="flex items-center mb-8">
                   <div className="rounded-full  w-16 h-16 flex items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      class="h-16 w-16 mx-auto text-cyan-500 to blue-500 border border-2 rounded-full border-gradientBlueOne p-2"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      stroke="currentColor"
-                    >
-                      <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                    </svg>
+                  <img src={phone} alt=""/>
                   </div>
                   <p className="ml-8 text-gray-500">+91-8800227114</p>
                 </div>
                 <div className="flex items-center my-7">
                   <div className="rounded-full w-16 h-16 flex  items-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-16 w-16 mx-auto text-cyan-500 to blue-500 border border-2 rounded-full border-gradientBlueOne p-2"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                        <img src={mail} alt=""/>
                   </div>
                   <p className="ml-8 text-gray-500">sales@cloudstok.com</p>
                 </div>

@@ -7,39 +7,109 @@ import SuccessCard from "../../components/servicecard/SuccessCard"
 import CloudOne from "../../assets/images/cloudOne.png"
 import CloudThree from "../../assets/images/CloudThree.png"
 import CloudTwo from "../../assets/images/cloudTwo.png"
-import Loading from "../../components/loading/Loading"
+import roadMap from "../../assets/images/devOpsMap.jpg"
+import Fade from "react-reveal/Fade"
+import ansible from "../../assets/images/ansible.jpg"
+import aws from "../../assets/images/aws.jpg"
+import azurearm from "../../assets/images/azurearm.jpg"
+import chef from "../../assets/images/chef.jpg"
+import circleci from "../../assets/images/circleci.jpg"
+import dataDog from "../../assets/images/datadog.jpg"
+import gafana from "../../assets/images/gafana.jpg"
+import git from "../../assets/images/git.jpg"
+import gitlab from "../../assets/images/gitlab.jpg"
+import graph from "../../assets/images/graph.jpg"
+import kubernetes from "../../assets/images/kubernets.jpg"
+import jenkins from "../../assets/images/jenkins.jpg"
+import promenthes from "../../assets/images/promenthes.jpg"
+import puppet from "../../assets/images/puppet.jpg"
+import splunk from "../../assets/images/splunk.jpg"
+import terraform from "../../assets/images/terraform.jpg"
+import zabbix from "../../assets/images/zabbix.jpg"
 
 const Cloud = () => {
+
+  const imgData = [
+    ansible,
+    aws,
+    azurearm,
+    chef,
+    circleci,
+    dataDog,
+    gafana,
+    git,
+    gitlab,
+    graph,
+    kubernetes,
+    jenkins,
+    promenthes,
+    puppet,
+    splunk,
+    terraform,
+    zabbix,
+  ]
   const data = [
     {
       head: "Application Development and Modernization",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: " Planning to convert monolithic application to microservices. Let's check our offering.",
       route: "/services/applications",
     },
     {
       head: "Application Testing and Consulting",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: "We help you to architect your application and select right set of tools and services...",
       route: "/services/apptesting",
     },
     {
       head: "DevOps as a service",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: "Our expertise in major DevOps tools can help customers to implement DevOps as a practice in their organization.",
       route: "/services/devops",
     },
     {
-      head: "Cloud Managed Services",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      head: "Cloud Manage Services",
+      para: "We Develop, Implement and Manage Workloads on all major cloud platforms.",
       route: "/services/cloud",
     },
   ]
+
   return (
     <Layout>
       <Pagename name={"Services"} servicename={"DevOps as a Service"} />
-      <div className="bg-bgBlue">
+      <div className="bg-[#f5fafe]">
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb route1={"Services"} route2={"DevOps as a Service"} />
+
+          <h2 className="text-3xl font-semibold mt-10">DevOps as a Service</h2>
+          <Fade big>
+            <p className="my-4 text-gray-600 leading-8 text-md">
+              Market are fulfilled with plethora of options. Our Consultant will
+              help you to create, find and manage your application end-to-end.
+              We offer Services of Application Development. Application
+              Monitoring and Management Support for the Application. No
+              ecalations and hassle as Cloudstok's Team will help you throught
+              the process to achieve your business goals.
+            </p>
+          </Fade>
+          <h3 className="mt-8 text-2xl font-semibold leading-10">
+            Cloudstok DevOps Roadmap
+          </h3>
+          <img src={roadMap} alt="" className="w-full mt-4" />
+          <h3 className="mt-8 text-2xl font-semibold leading-10">
+            Supported DevOps Tools
+          </h3>
+          <div className="grid md:grid-cols-6 grid-cols-3 gap-4 mt-4 md:mb-8 place-items-center">
+            {imgData.map((e, i) =>
+              i < 6 ? (
+                <Fade left>
+                  <img src={e} alt="" className="sm:w-full max-w-sm " />
+                </Fade>
+              ) : (
+                <Fade right>
+                  <img src={e} alt="" className="sm:w-full max-w-sm " />
+                </Fade>
+              )
+            )}
+          </div>
         </div>
-        <Loading/>
       </div>
 
       <div className="max-w-6xl px-8 md:px-8 mx-auto">
@@ -73,11 +143,12 @@ const Cloud = () => {
             <SuccessCard image={CloudThree} />
           </div>
           <div className="flex justify-center">
-            <button
-              // onClick={() => setShowModal(true)}
-              className="mt-12 bg-gradient-to-r to-cyan-500 from-blue-500 text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
+          <button
+              className="mt-8 mb-4 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
             >
-              More Blogs
+              <div className=" bg-white text-black px-8 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
+                More Stories
+              </div>
             </button>
           </div>
         </div>

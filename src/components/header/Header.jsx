@@ -17,11 +17,13 @@ function Nav({ location }) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-7">
           <div className="flex items-center justify-between h-20">
             <div className="flex-shrink-0">
-              <img
-                className="h-16 w-24"
-                src="https://cloudstok.com/img/white-logo.png"
-                alt="Workflow"
-              />
+              <Link className="cursor-pointer" to='/'>
+                <img
+                  className="h-16 w-24"
+                  src="https://cloudstok.com/img/white-logo.png"
+                  alt="Workflow"
+                />
+              </Link>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
@@ -53,13 +55,7 @@ function Nav({ location }) {
                 >
                   Services
                   <FaChevronUp className="ml-1 mt-0.5" /> */}
-                <Menu
-                  as="div"
-                  className="relative inline-block text-left"
-                  onClick={() => {
-                    isUp === true ? setIsUp(!isUp) : setIsUp(false)
-                  }}
-                >
+                <Menu as="div" className="relative inline-block text-left">
                   <div>
                     <Menu.Button>
                       <Link
@@ -260,17 +256,19 @@ function Nav({ location }) {
                     isUp === true ? setIsUp(!isUp) : setIsUp(false)
                   }}
                 >
-                  <div >
-                    <Menu.Button className={'w-full'}>
+                  <div>
+                    <Menu.Button className={"w-full"}>
                       <Link
                         to="/services"
                         partiallyActive={true}
-                        activeClassName="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm flex justify-between"
-                        className="hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium  block px-3 py-2 rounded-md text-base w-full"
+                        activeClassName="flex bg-gradient-to-r flex justify-between w-full from-cyan-500 to-blue-500 text-white font-medium px-3 py-2 rounded-md text-sm"
+                        className={
+                          "flex justify-between w-full hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-white hover:font-medium px-3 py-2 rounded-md text-sm"
+                        }
                       >
                         Services
                         <ChevronDownIcon
-                          className="-mr-1 ml-2 h-5 w-5"
+                          className="-mr-1 h-5 w-5"
                           aria-hidden="true"
                         />
                       </Link>

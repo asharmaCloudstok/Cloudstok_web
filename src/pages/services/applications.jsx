@@ -32,22 +32,22 @@ const Applications = () => {
   const data = [
     {
       head: "Application Development and Modernization",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: " Planning to convert monolithic application to microservices. Let's check our offering.",
       route: "/services/applications",
     },
     {
       head: "Application Testing and Consulting",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: "We help you to architect your application and select right set of tools and services...",
       route: "/services/apptesting",
     },
     {
-      head: "DevOpas as a service",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      head: "DevOps as a service",
+      para: "Our expertise in major DevOps tools can help customers to implement DevOps as a practice in their organization.",
       route: "/services/devops",
     },
     {
       head: "Cloud Manage Services",
-      para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
+      para: "We Develop, Implement and Manage Workloads on all major cloud platforms.",
       route: "/services/cloud",
     },
   ]
@@ -85,7 +85,7 @@ const Applications = () => {
       <div className="bg-bgBlue">
         <div className="max-w-6xl px-8 md:px-8 mx-auto pb-20">
           <Breadcrumb
-            route1={"services"}
+            route1={"Services"}
             route2={"Application Development and Modernization"}
           />
           <h2 className="text-3xl font-semibold mt-10">
@@ -177,11 +177,12 @@ const Applications = () => {
             <SuccessCard image={CloudThree} />
           </div>
           <div className="flex justify-center">
-            <button
-              // onClick={() => setShowModal(true)}
-              className="mt-12 bg-gradient-to-r to-cyan-500 from-blue-500 text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
+          <button
+              className="mt-8 mb-4 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
             >
-              More Blogs
+              <div className=" bg-white text-black px-8 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
+                More Stories
+              </div>
             </button>
           </div>
         </div>

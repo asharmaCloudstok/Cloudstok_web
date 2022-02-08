@@ -1,17 +1,20 @@
 import { Link } from "gatsby"
 import React from "react"
 import { FaTimes } from "react-icons/fa"
-import youtube from '../assets/images/youtube.png'
+import youtube from "../assets/images/youtube.png"
+import { FaList, FaRegEnvelope, FaUser } from "react-icons/fa"
+import {AiOutlineUser} from 'react-icons/ai'
+import {BsTelephone} from 'react-icons/bs'
 
 const Footer = () => {
   const [showModal, setShowModal] = React.useState(false)
 
-  let links = ["Who We Are", "Services", "Careers", "Blogs and Case Studies"]
+  let links = [{title:"Who We Are", route:'/whoweare'}, {title:"Services", route:'/services'}, {title:"Contact", route:'/contact'}, {title:"Blogs and Case studies", route:'/blogs'}, {title:"Careers", route:'/career'}]
   let whatWeDo = [
-    "Application Development and Modernization",
-    "DevOps as a Service",
-    "Cloud Manage Service",
-    "Application Consulting and Testing",
+    {title:"Application Development and Modernization", route:'/services/applications'},
+    {title:"DevOps as a Service", route:'/services/devops'},
+    {title:"Cloud Manage Service", route:'/services/cloud'},
+    {title:"Application Consulting and Testing", route:'/services/apptesting'},
   ]
   const terms = [
     "Security & Data Protection Practices",
@@ -45,15 +48,7 @@ const Footer = () => {
                 <div className="relative px-6 flex items-center text-black">
                   <div className="pb-12 pt-8 flex items-center flex-col">
                     <div className="flex h-12 w-10/12 items-center px-2 border mt-4 rounded border-gray-200 bg-gray-100">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 py-2 "
-                        viewBox="0 0 20 20"
-                        fill="gray"
-                      >
-                        <path d="M17.924 2.617a.997.997 0 00-.215-.322l-.004-.004A.997.997 0 0017 2h-4a1 1 0 100 2h1.586l-3.293 3.293a1 1 0 001.414 1.414L16 5.414V7a1 1 0 102 0V3a.997.997 0 00-.076-.383z" />
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                      </svg>
+                    <AiOutlineUser className="py-2 h-9 w-9 text-gray-400" />
                       <input
                         className="w-full p-2 bg-transparent focus:outline-none"
                         type="text"
@@ -63,20 +58,7 @@ const Footer = () => {
                     </div>
 
                     <div className="flex h-12 w-10/12  items-center px-2 border my-4 rounded border-gray-200 bg-gray-100">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 py-2"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="gray"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
+                    <BsTelephone className="h-9 w-9 text-gray-400 py-2" />
                       <input
                         className="w-full bg-transparent p-2 focus:outline-none"
                         type="text"
@@ -85,20 +67,7 @@ const Footer = () => {
                       />
                     </div>
                     <div className="flex h-12 w-10/12  items-center px-2 border mb-4 rounded border-gray-200 bg-gray-100">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 p-2"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="gray"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                        />
-                      </svg>
+                    <FaRegEnvelope className="h-9 w-9 text-gray-400 py-2" />
                       <input
                         class="bg-transparent w-full p-2 focus:outline-none"
                         type="text"
@@ -107,30 +76,17 @@ const Footer = () => {
                       />
                     </div>
                     <div className="flex px-2 w-10/12 border rounded border-gray-200 bg-gray-100">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-10 w-10 p-2"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="gray"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M4 6h16M4 10h16M4 14h16M4 18h16"
-                        />
-                      </svg>
+                    <FaList className="h-9 w-9 text-gray-400 py-2" />
                       <textarea
                         rows={5}
-                        className="bg-transparent pt-2 focus:outline-none"
+                        className="bg-transparent pt-2 pl-2 focus:outline-none"
                         type="text"
                         placeholder="Message"
                         name="usrnm"
                       />
                     </div>
 
-                    <button className="mt-4 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
+                    <button className="mt-4 bg-ctaBlue hover:bg-gradient-to-tr from-gradientBlueOne to-gradientBlueTwo text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-full">
                       Submit
                     </button>
                   </div>
@@ -141,7 +97,7 @@ const Footer = () => {
         )}
         <div className="flex justify-between flex-col md:flex-row">
           <p>
-            Leaders from the Cloudstpk Industry <br />
+            Leaders from the Cloudstok Industry <br />
             have come together to dissipate <br />
             problems that were faced in the
             <br /> market.
@@ -150,7 +106,7 @@ const Footer = () => {
             <h2 className="font-bold text-lg mb-2 mt-6 md:mt-0">Our Company</h2>
             <ul>
               {links.map(e => (
-                <li className="mt-2 cursor-pointer">{e}</li>
+                <li className="mt-2 cursor-pointer"><Link to={e.route}>{e.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -158,7 +114,7 @@ const Footer = () => {
             <h2 className="font-bold text-lg mb-2 mt-6 md:mt-0">What we do</h2>
             <ul>
               {whatWeDo.map(e => (
-                <li className="mt-2">{e}</li>
+                <li className="mt-2"><Link to={e.route}>{e.title}</Link></li>
               ))}
             </ul>
           </div>
@@ -176,11 +132,14 @@ const Footer = () => {
               <br />
               latest insights on the cloud
             </div>
+
             <button
               onClick={() => setShowModal(true)}
-              className="my-4 bg-gradient-to-r from-gradientBlueOne to-gradientBlueTwo text-white font-bold px-6 py-4 rounded-md uppercase text-sm"
+              className="my-4 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
             >
-              Subscribe Now
+              <div className=" bg-white text-black px-6 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
+                Subscribe Now
+              </div>
             </button>
           </div>
         </div>
@@ -211,7 +170,7 @@ const Footer = () => {
               </a>
 
               <a className="h-12 w-12 mr-3  cursor-pointer">
-              <img src={youtube} alt="Youtube"/>
+                <img src={youtube} alt="Youtube" />
               </a>
             </ul>
           </div>

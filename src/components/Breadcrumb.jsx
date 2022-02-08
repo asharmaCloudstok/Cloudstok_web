@@ -3,6 +3,18 @@ import React from "react"
 
 const Breadcrumb = ({ route1, route2}) => {
 
+  function routeCheck(){
+    let route ;
+    switch(route1){
+      case 'Services' : route = '/services';
+             break;
+      case 'Who we are' : route = '/whoweare';
+      break;
+      case 'Contact' : route = '/contact'
+    }
+    return route;
+  }
+
 
   return (
     <nav class="flex py-6 " aria-label="Breadcrumb">
@@ -30,10 +42,10 @@ const Breadcrumb = ({ route1, route2}) => {
               ></path>
             </svg>
             <Link
-              to={route1 == "services" ? "/services" : "/contact"}
+              to={routeCheck()}
               class="ml-1 text-lg text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
             >
-              {route1 || "contact"}
+              {route1}
             </Link>
           </div>
         </li>

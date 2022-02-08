@@ -52,9 +52,13 @@ const OurServices = () => {
                 <br />
                 select right set of tools and services.
               </p>
-              <button className="my-8 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-medium px-10 py-4  rounded-md uppercase text-sm">
+              <button
+              className="my-8 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
+            >
+              <div className=" bg-white text-black px-8 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
                 Know More
-              </button>
+              </div>
+            </button>
             </div>
             <img
               src={serviceTwo}

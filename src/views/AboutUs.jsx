@@ -53,7 +53,7 @@ const AboutUs = () => {
             consulting will help you in an easy transition to digital
             infrastructure
           </p>
-          <button className="mt-8 bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
+          <button className="mt-8 hover:bg-gradient-to-r from-gradientBlueOne to-gradientBlueTwo  bg-ctaBlue text-white font-medium px-6 py-3 rounded-md uppercase text-lg w-56">
             more about us
           </button>
         </div>

@@ -23,7 +23,7 @@ const Services = () => {
       route: "/services/apptesting",
     },
     {
-      head: "DevOpas as a service",
+      head: "DevOps as a service",
       para: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totamLorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam.",
       route: "/services/devops",
     },
@@ -71,12 +71,13 @@ const Services = () => {
               <SuccessCard image={CloudThree} />
             </div>
             <div className="flex justify-center">
-              <button
-                // onClick={() => setShowModal(true)}
-                className="mt-12 bg-gradient-to-r to-cyan-500 from-blue-500 text-white font-bold px-6 py-4 rounded-md uppercase text-md w-48"
-              >
+            <button
+              className="mt-8 mb-4 bg-gradient-to-r p-0.5 from-gradientBlueOne to-gradientBlueTwo text-white font-medium rounded-md uppercase text-sm"
+            >
+              <div className=" bg-white text-black px-8 py-4 hover:bg-gradient-to-r p-1 from-gradientBlueOne to-gradientBlueTwo hover:text-white rounded-md">
                 More Stories
-              </button>
+              </div>
+            </button>
             </div>
           </div>
         </div>
