@@ -96,7 +96,7 @@ const Cloud = () => {
           <h3 className="mt-8 text-2xl font-semibold leading-10">
             Supported DevOps Tools
           </h3>
-          <div className="grid md:grid-cols-6 grid-cols-3 gap-4 mt-4 md:mb-8 place-items-center">
+          <div className="grid sm:grid-cols-6 grid-cols-2 gap-4 mt-4 md:mb-8 place-items-center">
             {imgData.map((e, i) =>
               i < 6 ? (
                 <Fade left>
